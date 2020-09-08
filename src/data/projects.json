@@ -1,0 +1,155 @@
+[
+  {
+    "Name": "Wagtail Gatsby Blog (Frontend)",
+    "Description": "Frontend for a prototype Wagtail-Gatsby blog",
+    "Extended Description": "I created this project to figure out how I can use Wagtail as a headless CMS for a static website build with Gatsby. The backend makes use of Wagtail-Grapple to create the GraphQL endpoint. The GraphQL endpoint is consumed on the frontend with the help of the gatsby-source-wagtail plugin. Design and content are certainly not great, as I was focused on the technical implementation.",
+    "Image": "wagtail-gatsby-blog-frontend.png",
+    "GitHub": "https://github.com/tbrlpld/wagtail-gatsby-blog-frontend",
+    "Live": "",
+    "Technologies": "Gatsby, Gatsby-Source-Wagtail, GraphQL, Headless-CMS, JavaScript, React, Wagtail, Wagtail-Grapple"
+  },
+  {
+    "Name": "Wagtail Gatsby Blog (Backend)",
+    "Description": "Backend for a prototype Wagtail-Gatsby blog",
+    "Extended Description": "I created this project to figure out how I can use Wagtail as a headless CMS for a static website build with Gatsby. The backend makes use of Wagtail-Grapple to create the GraphQL endpoint. The GraphQL endpoint is consumed on the frontend with the help of the gatsby-source-wagtail plugin. Design and content are certainly not great, as I was focused on the technical implementation.",
+    "Image": "wagtail-gatsby-blog-backend.png",
+    "GitHub": "https://github.com/tbrlpld/wagtail-gatsby-blog-backend",
+    "Live": "",
+    "Technologies": "Django, Docker, Gatsby, GraphQL, Graphene, Graphene-Django, Headless-CMS, Poetry, Python, Vagrant, Wagtail, Wagtail-Grapple"
+  },
+  {
+    "Name": "LogTweet",
+    "Description": "Command line tool to create a tweet based on a #100DaysOfCode log message.",
+    "Extended Description": "The first package I have published on PyPI. I have used this tool to tweet my daily progress during the #100DaysOfCode challenge.\n\nThe fact that the tool currently requires the log to be published in HTML is not ideal. Since that HTML is typically generated from markdown log, it would be a great addition to directly generate the tweet from the markdown log. Unfortunately I have not gotten around to that feature yet.",
+    "Image": "logtweet.png",
+    "GitHub": "https://github.com/tbrlpld/logtweet",
+    "Live": "https://pypi.org/project/logtweet/",
+    "Technologies": "BeautifulSoup, Pytest, Python, Twitter, mypy"
+  },
+  {
+    "Name": "Log100Days (Gatsby)",
+    "Description": "Gatsby project to render a #100DaysOfCode markdown log into a static website.",
+    "Extended Description": "",
+    "Image": "log100days-gatsby.png",
+    "GitHub": "https://github.com/tbrlpld/log100days-gatsby",
+    "Live": "https://log100days.lpld.io",
+    "Technologies": "CSS Modules, Gatsby, GitHub Actions, JSX, JavaScript, React"
+  },
+  {
+    "Name": "Log100Days (Quart)",
+    "Description": "Containerized Quart app to display a markdown log for the #100DaysOfCode challenge as a website.",
+    "Extended Description": "I have also created a https://github.com/tbrlpld/log100days-gatsby, because it is overkill to do the conversion from markdown to HTML on every request for content that is only updated once a day.",
+    "Image": "log100days-quart.png",
+    "GitHub": "https://github.com/tbrlpld/log100days",
+    "Live": "",
+    "Technologies": "Docker, Flask, Python, Quart"
+  },
+  {
+    "Name": "Short",
+    "Description": "URL shortener app, build with Flask, deployed with Zappa to AWS Lambda and Dynamo DB",
+    "Extended Description": "",
+    "Image": "short.gif",
+    "GitHub": "https://github.com/tbrlpld/short",
+    "Live": "https://s.lpld.io",
+    "Technologies": "AWS DynamoDB, AWS Lamba, Flask, Python, Zappa"
+  },
+  {
+    "Name": "Flaskr",
+    "Description": "Flask based blog app build as an extended version of the https://flask.palletsprojects.com/en/1.1.x/tutorial/#tutorial.",
+    "Extended Description": "The extension includes the following features : detail post view, likes, comments, tags, title search, pagination, image upload, markdown formatting and RSS feed.\n\nIt is definitely not pretty, but that was not the point of the exercise.",
+    "Image": "flaskr.png",
+    "GitHub": "https://github.com/tbrlpld/flaskr",
+    "Live": "",
+    "Technologies": "Coverage, Flask, Jinja, Pytest, Python, Test Driven Development"
+  },
+  {
+    "Name": "CAE Job Diary",
+    "Description": "Web application to search, track and summarize CAE simulation jobs",
+    "Extended Description": "I developed CAE Job Dairy as a side project to help me stay organized in my former day job as a CAE simulation and development engineer for automotive safety. Simulation jobs added to the server cluster are polled and the submission information is automatically added to the web app. Changes to the jobs status are automatically update in the web app and you can leave a result summary after you analyzed your job.",
+    "Image": "caejd.png",
+    "GitHub": "https://github.com/tbrlpld/caejobdiary",
+    "Live": "",
+    "Technologies": "Bootstrap, Django, Docker, GitLab CI, MySQL, Python"
+  },
+  {
+    "Name": "PlotGraph",
+    "Description": "Sublime Text package to plot number columns as graphs.",
+    "Extended Description": "",
+    "Image": "plotgraph.png",
+    "GitHub": "https://github.com/tbrlpld/PlotGraph",
+    "Live": "",
+    "Technologies": "Matplotlib, Python, Sublime Text"
+  },
+  {
+    "Name": "100 Days Of Web in Python",
+    "Description": "45 (mini) projects I created from the \"100 Days Of Web in Python\" course during the 100DaysOfCode challenge",
+    "Extended Description": "Most projects where create in a few hours. I have extracted the projects I have worked on more into their own repositories.",
+    "Image": "100days-screencast.gif",
+    "GitHub": "https://github.com/tbrlpld/100daysofweb-with-python-course",
+    "Live": "",
+    "Technologies": "API, API-Star, Alembic, Asyncio, CSS, DOM, Django, Django-Rest-framework, Docker, Flask, HTML, Heroku, JavaScript, Markdown, Nginx, Pelican, Pyramid, Python, Quart, REST, React, Requests, Responder, SQLAlchemy, Selenium, Static-Site-Generator, Twilio, Vuejs, mypy"
+  },
+  {
+    "Name": "Tic-Tac-Toe",
+    "Description": "Tic-Tac-Toe game created in React",
+    "Extended Description": "",
+    "Image": "tictactoe.gif",
+    "GitHub": "https://github.com/tbrlpld/tictactoe",
+    "Live": "https://tictactoe.lpld.io",
+    "Technologies": "JSX, JavaScript, React"
+  },
+  {
+    "Name": "Remember Me",
+    "Description": "Web browser memory game (created for the Udacity Nanodegree \"Intro to Programming\")",
+    "Extended Description": "",
+    "Image": "rememberme.png",
+    "GitHub": "https://github.com/tbrlpld/remember-me",
+    "Live": "https://rememberme.lpld.io",
+    "Technologies": "CSS, HTML, JavaScript, jQuery"
+  },
+  {
+    "Name": "Fill in the Gaps",
+    "Description": "Command line fill-in-the-gaps quiz game (created for the Udacity Nanodegree \"Intro to Programming\")",
+    "Extended Description": "",
+    "Image": "fill-in-the-gaps.gif",
+    "GitHub": "https://github.com/tbrlpld/fill-in-the-gaps",
+    "Live": "",
+    "Technologies": "Python"
+  },
+  {
+    "Name": "Tribute Page",
+    "Description": "Simple responsive tribute webpage for John Horton Conway (created for the freeCodeCamp Responsive Web Design certificate)",
+    "Extended Description": "",
+    "Image": "fcc-tribute-page.jpg",
+    "GitHub": "",
+    "Live": "https://codepen.io/tbrlpld/full/LYpbeRg",
+    "Technologies": "CSS, HTML"
+  },
+  {
+    "Name": "Technical Documentation",
+    "Description": "Simple responsive technical documentation page for Logtweet (created for the freeCodeCamp Responsive Web Design certificate)",
+    "Extended Description": "",
+    "Image": "fcc-technical-documentation.png",
+    "GitHub": "",
+    "Live": "https://codepen.io/tbrlpld/full/rNOpZgo",
+    "Technologies": ""
+  },
+  {
+    "Name": "Product Landing Page",
+    "Description": "Simple responsive product landing page for my favorite beers (created for the freeCodeCamp Responsive Web Design certificate)",
+    "Extended Description": "",
+    "Image": "fcc-product-landing-page.png",
+    "GitHub": "",
+    "Live": "https://codepen.io/tbrlpld/full/ExVXrQo",
+    "Technologies": "CSS, HTML"
+  },
+  {
+    "Name": "Survey Form",
+    "Description": "Simple responsive survey form (created for the freeCodeCamp Responsive Web Design certificate)",
+    "Extended Description": "",
+    "Image": "fcc-survey-form.png",
+    "GitHub": "",
+    "Live": "https://codepen.io/tbrlpld/full/KKdaEzb",
+    "Technologies": "CSS, HTML"
+  }
+]
