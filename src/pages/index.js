@@ -10,8 +10,8 @@ import style from './index.module.css'
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title='Portfolio' />
-    <section>
-      <div>
+    <section className={style.welcome}>
+      <div className={style.headingWrapper}>
         <h1>Hi there,</h1>
         <Image className={style.profilePicture} fluid={data.profilePicture.fluid} alt='Profile photo' />
       </div>

@@ -11,14 +11,23 @@ html {
 
   --shadow-inner-3: inset 0px 0px 1px hsla(0, 0%, 0%, 0.2);
 
+  --font-stack: 'Helvetica Neue', Arial, sans-serif;
+  --font-8-bold: 600 36px var(--font-stack);
+
   background-color: white;
   background-color: var(--gray-100);
   color: black;
   color: var(--gray-900);
   font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-stack);
+  text-rendering: optimizeLegibility;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+main {
+  margin: 0 24px;
 }
