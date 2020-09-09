@@ -15,6 +15,7 @@ const IndexPage = ({ data }) => (
         <h1>Hi there,</h1>
         <Image className={style.profilePicture} fluid={data.profilePicture.fluid} alt='Profile photo' />
       </div>
+      <p className={style.intro}>I am Tibor. I’m a former automotive engineer on a journey to becoming a full&nbsp;stack&nbsp;develper.</p>
     </section>
   </Layout>
 )
