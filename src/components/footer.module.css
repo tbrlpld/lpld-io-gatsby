@@ -1,0 +1,12 @@
+footer {
+  text-align: center;
+  padding: 8px;
+
+  font-size: 12px;
+  line-height: 150%;
+
+  color: darkgray;
+  color: var(--gray-700);
+  background-color: black;
+  background-color: var(--gray-900);
+}

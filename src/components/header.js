@@ -1,22 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { Link } from 'gatsby'
 
 import style from './header.module.css'
 
-const Header = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      logo: file(name: {eq: "lpld-logo"}) {
-        publicURL
-      }
-    }
-  `)
-  console.log(data)
-
+const Header = ({ logo }) => {
   return (
     <header>
-      <img className={style.logo} src={data.logo.publicURL} />
+      <img className={style.logo} src={logo} alt='lpld logo' />
       <nav>
         <ul>
           <li><Link className={style.navLink} to='/#projects'>Projects</Link></li>
@@ -25,14 +15,6 @@ const Header = () => {
       </nav>
     </header>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string
-}
-
-Header.defaultProps = {
-  siteTitle: ''
 }
 
 export default Header
