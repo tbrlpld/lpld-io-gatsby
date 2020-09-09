@@ -6,6 +6,7 @@ header {
 }
 
 .logo {
+  display: block;
   height: 48px;
   width: auto;
 }
@@ -31,4 +32,14 @@ nav > ul > li {
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
+}
+
+.navLink:active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px; 
+  color: var(--gray-700);
+}
+
+.navLink:hover {
+  color: var(--gray-700);
 }
