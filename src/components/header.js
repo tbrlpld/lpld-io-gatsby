@@ -6,7 +6,9 @@ import style from './header.module.css'
 const Header = ({ logo }) => {
   return (
     <header>
-      <img className={style.logo} src={logo} alt='lpld logo' />
+      <Link to='/'>
+        <img className={style.logo} src={logo} alt='lpld logo' />
+      </Link>
       <nav>
         <ul>
           <li><Link className={style.navLink} to='/#projects'>Projects</Link></li>
