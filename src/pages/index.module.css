@@ -1,0 +1,9 @@
+.profilePicture {
+  width: 96px;
+  box-shadow: var(--shadow-inner-3);
+  border-radius: 100%;
+}
+
+.profilePicture img {
+  z-index: -1;
+}

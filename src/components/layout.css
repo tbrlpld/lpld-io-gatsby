@@ -8,6 +8,9 @@ html {
   --gray-700: hsl(0, 0%, 46%);
   --gray-800: hsl(0, 0%, 34%);
   --gray-900: hsl(0, 0%, 20%);
+
+  --shadow-inner-3: inset 0px 0px 1px hsla(0, 0%, 0%, 0.2);
+
   background-color: white;
   background-color: var(--gray-100);
   color: black;
