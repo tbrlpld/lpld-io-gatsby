@@ -1,3 +1,19 @@
+header {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 48px;
+  width: auto;
+}
+
+nav {
+  display: inline-block;
+}
+
 nav > ul {
   margin: 0;
   padding-left: 0;
@@ -5,4 +21,14 @@ nav > ul {
 
 nav > ul > li {
   display: inline-block;
+  margin-left: 24px;
+}
+
+.navLink {
+  color: gray;
+  color: var(--gray-500);
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
 }

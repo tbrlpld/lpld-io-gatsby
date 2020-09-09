@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
-import _ from './header.module.css'
+import style from './header.module.css'
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -12,16 +12,15 @@ const Header = () => {
       }
     }
   `)
+  console.log(data)
 
   return (
     <header>
-      <svg width='48' height='48' xmlns='http://www.w3.org/2000/svg'>
-        <image src={data.logo.publicURL} />
-      </svg>
+      <img className={style.logo} src={data.logo.publicURL} />
       <nav>
         <ul>
-          <li><Link to='/#projects'>Projects</Link></li>
-          <li><Link to='/#contact'>Contact</Link></li>
+          <li><Link className={style.navLink} to='/#projects'>Projects</Link></li>
+          <li><Link className={style.navLink} to='/#contact'>Contact</Link></li>
         </ul>
       </nav>
     </header>
