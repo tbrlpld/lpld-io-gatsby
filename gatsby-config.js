@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'lpld.io',
     description: 'Projects I have build include a Wagtail-Gatsby prototype blog, a URL shortener, a command line tool to tweet you 100DaysOfCode progress, a React Tic-Tac-Toe Game, and many more. Get in touch and let\'s build something together.',
-    author: 'Tibor Leupold'
+    author: 'Tibor Leupold',
+    email: 'tibor@lpld.io'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

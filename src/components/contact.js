@@ -1,17 +1,8 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+import ContactButton from './contact-button'
 
 import style from './contact.module.css'
-
-const ContactButton = () => {
-  return (
-    <a className={style.contactBtn} href='mailto:'>
-      <FontAwesomeIcon icon={faEnvelope} className={'fa-lg ' + style.icon} />
-      Send me an email
-    </a>
-  )
-}
 
 const Contact = () => {
   return (

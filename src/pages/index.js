@@ -73,7 +73,7 @@ const IndexPage = ({ data }) => {
 }
 
 export const query = graphql`
-  {
+  query IndexPageQuery {
     profilePicture: imageSharp(fixed: {originalName: {eq: "profile.jpg"}}) {
       id
       fluid(maxWidth: 384) {
