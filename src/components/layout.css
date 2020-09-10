@@ -9,10 +9,17 @@ html {
   --gray-800: hsl(0, 0%, 34%);
   --gray-900: hsl(0, 0%, 20%);
 
+  --shadow-1: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-2: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  --shadow-3: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  --shadow-4: 0px 10px 24px rgba(0, 0, 0, 0.2);
+  --shadow-5: 0px 15px 35px rgba(0, 0, 0, 0.2);
   --shadow-inner-3: inset 0px 0px 1px hsla(0, 0%, 0%, 0.2);
 
   --font-stack: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+  --font-2: normal 14px/1.5 var(--font-stack);
   --font-5: normal 20px var(--font-stack);
+  --font-5-bold: bold 20px var(--font-stack);
   --font-8-bold: bold 36px var(--font-stack);
 
   background-color: white;

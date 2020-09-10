@@ -29,20 +29,22 @@ const IndexPage = ({ data }) => {
       id: project.node.id,
       name: project.node.Name,
       description: project.node.Description,
-      image: image
+      image: image,
+      imageIsMacWindowScreenshot: project.node.imageIsMacWindowScreenshot
     }
   })
 
   const projectElements = projects.map((project) => {
+    const classNames = project.imageIsMacWindowScreenshot ? style.projectImage : style.projectImage + ' ' + style.projectImageNotMacScreenshot
     const image = project.image.isGif
-      ? <img src={project.image.src} className={style.projectImage} alt={'Screencast of ' + project.name} />
-      : <Image fluid={project.image.fluid} className={style.projectImage} alt={'Screenshot of ' + project.name} />
+      ? <img src={project.image.src} className={classNames} alt={'Screencast of ' + project.name} />
+      : <Image fluid={project.image.fluid} className={classNames} alt={'Screenshot of ' + project.name} />
     return (
       <li key={project.id}>
         {image}
-        <div>
-          <h3>{project.name}</h3>
-
+        <div className={style.projectData}>
+          <h3 className={style.projectName}>{project.name}</h3>
+          <p className={style.projectDescription}>{project.description}</p>
         </div>
       </li>
     )
@@ -100,6 +102,7 @@ export const query = graphql`
         node {
           Description
           Image
+          imageIsMacWindowScreenshot
           Name
           id
         }

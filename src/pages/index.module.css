@@ -35,18 +35,44 @@
   padding: 64px 0 0;
 }
 
-.projects ul {
+.projects h2 {
   margin: 0;
+}
+
+.projects ul {
+  margin: 64px 0 0; 
   padding: 0;
 }
 
 .projects ul li {
-  margin: 0;
+  margin: 64px 0 0;
   padding: 0;
   display: flex;
+  align-items: flex-start;
 }
 
 .projectImage {
   width: 96px;
   flex-shrink: 0;
+}
+
+.projectImageNotMacScreenshot {
+  width: 92px;
+  margin: 0 2px;
+  box-shadow: var(--shadow-2)
+}
+
+.projectData {
+  margin-left: 16px;
+}
+
+.projectName {
+  margin: 8px 0 12px;
+  font: var(--font-5-bold);
+}
+
+.projectDescription {
+  margin: 0;
+  color: var(--gray-600);
+  font: var(--font-2);
 }
