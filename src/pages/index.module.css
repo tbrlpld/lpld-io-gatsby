@@ -12,13 +12,10 @@
 .welcome h1 {
   display: inline-block;
   margin: 0;
-  font: var(--font-8-bold);
-  font-optical-sizing: none;
 }
 
 .welcome .profilePicture {
   width: 96px;
-  /*align-self: center;*/
   box-shadow: var(--shadow-inner-3);
   border-radius: 100%;
 }
@@ -31,4 +28,25 @@
   margin: 32px 0 0;
   font: var(--font-5);
   color: var(--gray-600);
+}
+
+.projects {
+  margin: 48px 0;
+  padding: 64px 0 0;
+}
+
+.projects ul {
+  margin: 0;
+  padding: 0;
+}
+
+.projects ul li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.projectImage {
+  width: 96px;
+  flex-shrink: 0;
 }

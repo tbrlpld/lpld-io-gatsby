@@ -34,3 +34,11 @@ body {
 main {
   margin: 0 24px;
 }
+
+h1 {
+  font: var(--font-8-bold);
+}
+
+h2 {
+  font: var(--font-8-bold);
+}
