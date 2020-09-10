@@ -84,7 +84,7 @@
     "Description": "Sublime Text package to plot number columns as graphs.",
     "Extended Description": "",
     "Image": "plotgraph.png",
-    "imageIsMacWindowScreenshot": true,
+    "imageIsMacWindowScreenshot": false,
     "GitHub": "https://github.com/tbrlpld/PlotGraph",
     "Live": "",
     "Technologies": "Matplotlib, Python, Sublime Text"
