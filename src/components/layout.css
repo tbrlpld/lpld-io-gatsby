@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   --gray-100: hsl(0, 0%, 98%);
   --gray-200: hsl(0, 0%, 94%);
@@ -17,6 +21,7 @@ html {
   --shadow-inner-3: inset 0px 0px 1px hsla(0, 0%, 0%, 0.2);
 
   --font-stack: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+  --font-1: normal 12px/1.5 var(--font-stack);
   --font-2: normal 14px/1.5 var(--font-stack);
   --font-5: normal 20px var(--font-stack);
   --font-5-bold: bold 20px var(--font-stack);
