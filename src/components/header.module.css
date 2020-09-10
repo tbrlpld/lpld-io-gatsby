@@ -34,12 +34,12 @@ nav > ul > li {
   text-decoration: none;
 }
 
-.navLink:active {
+.navLink:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px; 
-  color: var(--gray-700);
 }
 
-.navLink:hover {
-  color: var(--gray-700);
+.navLink:active {
+  color: var(--gray-800);
 }
+

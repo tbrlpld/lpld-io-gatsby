@@ -17,6 +17,16 @@ section.contact {
   background-color: var(--gray-900);
 }
 
+.contactBtn:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px; 
+}
+
+.contactBtn:active {
+  background-color: black;
+}
+
 .contactBtn .icon {
   margin-right: 12px;
 }

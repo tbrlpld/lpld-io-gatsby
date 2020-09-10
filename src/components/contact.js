@@ -6,7 +6,7 @@ import style from './contact.module.css'
 
 const ContactButton = () => {
   return (
-    <a className={style.contactBtn}>
+    <a className={style.contactBtn} href='mailto:'>
       <FontAwesomeIcon icon={faEnvelope} className={'fa-lg ' + style.icon} />
       Send me an email
     </a>
