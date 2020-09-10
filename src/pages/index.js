@@ -60,7 +60,7 @@ const IndexPage = ({ data }) => {
         </div>
         <p className={style.intro}>I am Tibor. I’m a former automotive engineer on a journey to becoming a full&nbsp;stack&nbsp;develper.</p>
       </section>
-      <section className={style.projects}>
+      <section id='projects' className={style.projects}>
         <h2>These are things I have build before</h2>
         <ul>
           {projectElements}
