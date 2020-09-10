@@ -4,6 +4,7 @@ import Image from 'gatsby-image'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Contact from '../components/contact'
 
 import style from './index.module.css'
 
@@ -66,6 +67,7 @@ const IndexPage = ({ data }) => {
           {projectElements}
         </ul>
       </section>
+      <Contact />
     </Layout>
   )
 }

@@ -24,6 +24,7 @@ html {
   --font-1: normal 12px/1.5 var(--font-stack);
   --font-2: normal 14px/1.5 var(--font-stack);
   --font-5: normal 20px var(--font-stack);
+  --font-3-bold: bold 16px/1.5 var(--font-stack);
   --font-5-bold: bold 20px var(--font-stack);
   --font-8-bold: bold 36px var(--font-stack);
 
