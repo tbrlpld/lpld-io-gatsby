@@ -16,3 +16,7 @@ section.contact {
   background-color: black;
   background-color: var(--gray-900);
 }
+
+.contactBtn .icon {
+  margin-right: 12px;
+}
