@@ -7,31 +7,17 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
 
 import './layout.css'
 import Header from './header'
 import Footer from './footer'
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      logo: file(name: {eq: "lpld-logo"}) {
-        publicURL
-      }
-      site {
-        siteMetadata {
-          author
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      <Header logo={data.logo.publicURL} />
+      <Header />
       <main>{children}</main>
-      <Footer author={data.site.siteMetadata.author} />
+      <Footer />
     </>
   )
 }

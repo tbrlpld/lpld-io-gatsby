@@ -1,13 +1,21 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 
 import style from './header.module.css'
 
-const Header = ({ logo }) => {
+const Header = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      logo: file(name: {eq: "lpld-logo"}) {
+        publicURL
+      }
+    }
+  `)
+
   return (
     <header>
       <Link to='/'>
-        <img className={style.logo} src={logo} alt='lpld logo' />
+        <img className={style.logo} src={data.logo.publicURL} alt='lpld logo' />
       </Link>
       <nav>
         <ul>
