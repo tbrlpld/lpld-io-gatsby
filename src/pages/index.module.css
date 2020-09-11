@@ -51,6 +51,27 @@ section.projects {
   align-items: flex-start;
 }
 
+.projectEntry {
+  position: relative;
+}
+
+.projectEntry:hover .projectName {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.projectEntry:active .projectName {
+  color: black;
+}
+
+.projectEntry .projectLink {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .projectImage {
   width: 96px;
   flex-shrink: 0;

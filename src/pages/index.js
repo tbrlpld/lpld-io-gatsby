@@ -36,10 +36,11 @@ const createProjectElement = (projectData) => {
     : <Image fluid={projectData.image.fluid} className={classNames} alt={'Screenshot of ' + projectData.name} />
 
   return (
-    <li key={projectData.id}>
+    <li key={projectData.id} className={style.projectEntry}>
+      <a href={projectData.path} className={style.projectLink} />
       {image}
       <div className={style.projectData}>
-        <a href={projectData.path}><h3 className={style.projectName}>{projectData.name}</h3></a>
+        <h3 className={style.projectName}>{projectData.name}</h3>
         <p className={style.projectDescription}>{projectData.description}</p>
       </div>
     </li>
