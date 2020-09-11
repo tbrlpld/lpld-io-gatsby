@@ -72,17 +72,6 @@ section.projects {
   right: 0;
 }
 
-.projectImage {
-  width: 96px;
-  flex-shrink: 0;
-}
-
-.projectImageNotMacScreenshot {
-  width: 92px;
-  margin: 0 2px;
-  border-radius: 1px;
-  box-shadow: var(--shadow-1)
-}
 
 .projectData {
   margin-left: 16px;

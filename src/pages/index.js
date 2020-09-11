@@ -5,40 +5,15 @@ import Image from 'gatsby-image'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Contact from '../components/contact'
+import ProjectImage from '../components/project-image'
 
 import style from './index.module.css'
 
-const getFluidOrGif = ({ imageName, allImages, allGifs }) => {
-  const fluidImage = allImages.filter((image) => {
-    return image.fluid.originalName === imageName
-  })[0]
-
-  const image = {}
-  if (fluidImage) {
-    image.isGif = false
-    image.fluid = fluidImage.fluid
-  } else {
-    const gif = allGifs.filter((gif) => {
-      return gif.name === imageName.slice(0, -4)
-    })[0]
-    image.isGif = true
-    image.src = gif.publicURL
-  }
-  return image
-}
-
 const createProjectElement = (projectData) => {
-  const classNames = projectData.imageIsMacWindowScreenshot
-    ? style.projectImage : style.projectImage + ' ' + style.projectImageNotMacScreenshot
-
-  const image = projectData.image.isGif
-    ? <img src={projectData.image.src} className={classNames} alt={'Screencast of ' + projectData.name} />
-    : <Image fluid={projectData.image.fluid} className={classNames} alt={'Screenshot of ' + projectData.name} />
-
   return (
     <li key={projectData.id} className={style.projectEntry}>
       <a href={projectData.path} className={style.projectLink} />
-      {image}
+      <ProjectImage imageName={projectData.image} projectName={projectData.name} isMacWindowScreenshot={projectData.imageIsMacWindowScreenshot} />
       <div className={style.projectData}>
         <h3 className={style.projectName}>{projectData.name}</h3>
         <p className={style.projectDescription}>{projectData.description}</p>
@@ -48,22 +23,13 @@ const createProjectElement = (projectData) => {
 }
 
 const IndexPage = ({ data }) => {
-  const allImages = data.allImages.edges.map((item) => item.node)
-  const allGifs = data.allGifs.edges.map((item) => item.node)
-
   const projects = data.allProjectsJson.edges.map((project) => {
-    const image = getFluidOrGif({
-      imageName: project.node.fields.image,
-      allImages: allImages,
-      allGifs: allGifs
-    })
-
     return {
       id: project.node.id,
       name: project.node.fields.name,
       path: project.node.fields.path,
       description: project.node.fields.description,
-      image: image,
+      image: project.node.fields.image,
       imageIsMacWindowScreenshot: project.node.fields.imageIsMacWindowScreenshot
     }
   })
@@ -97,25 +63,6 @@ export const query = graphql`
       id
       fluid(maxWidth: 384) {
         ...GatsbyImageSharpFluid
-      }
-    }
-    allImages:   allImageSharp {
-      edges {
-        node {
-          fluid(maxWidth: 96) {
-            originalName
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-    allGifs: allFile(filter: {extension: {eq: "gif"}}) {
-      edges {
-        node {
-          id
-          publicURL
-          name
-        }
       }
     }
     allProjectsJson {

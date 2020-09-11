@@ -1,0 +1,8 @@
+section.project {
+  margin: 48px 0 24px;
+}
+
+.project .description {
+  font: var(--font-5);
+  color: var(--gray-600);
+}
