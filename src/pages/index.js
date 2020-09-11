@@ -9,33 +9,20 @@ import ProjectElement from '../components/project-element'
 
 import style from './index.module.css'
 
-const createProjectElement = (projectData) => {
-  return (
-    <li key={projectData.id}>
-      <ProjectElement
-        projectName={projectData.name}
-        description={projectData.description}
-        url={projectData.path}
-        image={projectData.image}
-        imageIsMacWindowScreenshot={projectData.imageIsMacWindowScreenshot}
-      />
-    </li>
-  )
-}
-
 const IndexPage = ({ data }) => {
-  const projects = data.allProjectsJson.edges.map((project) => {
-    return {
-      id: project.node.id,
-      name: project.node.fields.name,
-      path: project.node.fields.path,
-      description: project.node.fields.description,
-      image: project.node.fields.image,
-      imageIsMacWindowScreenshot: project.node.fields.imageIsMacWindowScreenshot
-    }
+  const projectElements = data.allProjectsJson.edges.map(({ node }) => {
+    return (
+      <li key={node.id}>
+        <ProjectElement
+          projectName={node.fields.name}
+          description={node.fields.description}
+          url={node.fields.path}
+          image={node.fields.image}
+          imageIsMacWindowScreenshot={node.fields.imageIsMacWindowScreenshot}
+        />
+      </li>
+    )
   })
-
-  const projectElements = projects.map(createProjectElement)
 
   return (
     <Layout>
