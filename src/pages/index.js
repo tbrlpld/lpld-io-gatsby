@@ -27,6 +27,25 @@ const getFluidOrGif = ({ imageName, allImages, allGifs }) => {
   return image
 }
 
+const createProjectElement = (projectData) => {
+  const classNames = projectData.imageIsMacWindowScreenshot
+    ? style.projectImage : style.projectImage + ' ' + style.projectImageNotMacScreenshot
+
+  const image = projectData.image.isGif
+    ? <img src={projectData.image.src} className={classNames} alt={'Screencast of ' + projectData.name} />
+    : <Image fluid={projectData.image.fluid} className={classNames} alt={'Screenshot of ' + projectData.name} />
+
+  return (
+    <li key={projectData.id}>
+      {image}
+      <div className={style.projectData}>
+        <h3 className={style.projectName}>{projectData.name}</h3>
+        <p className={style.projectDescription}>{projectData.description}</p>
+      </div>
+    </li>
+  )
+}
+
 const IndexPage = ({ data }) => {
   const allImages = data.allImages.edges.map((item) => item.node)
   const allGifs = data.allGifs.edges.map((item) => item.node)
@@ -47,21 +66,7 @@ const IndexPage = ({ data }) => {
     }
   })
 
-  const projectElements = projects.map((project) => {
-    const classNames = project.imageIsMacWindowScreenshot ? style.projectImage : style.projectImage + ' ' + style.projectImageNotMacScreenshot
-    const image = project.image.isGif
-      ? <img src={project.image.src} className={classNames} alt={'Screencast of ' + project.name} />
-      : <Image fluid={project.image.fluid} className={classNames} alt={'Screenshot of ' + project.name} />
-    return (
-      <li key={project.id}>
-        {image}
-        <div className={style.projectData}>
-          <h3 className={style.projectName}>{project.name}</h3>
-          <p className={style.projectDescription}>{project.description}</p>
-        </div>
-      </li>
-    )
-  })
+  const projectElements = projects.map(createProjectElement)
 
   return (
     <Layout>
