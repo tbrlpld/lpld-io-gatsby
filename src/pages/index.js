@@ -11,8 +11,11 @@ import ProjectImage from '../components/project-image'
 import style from './index.module.css'
 
 const IndexPage = ({ data }) => {
+  const allImages = data.allImages.edges.map((item) => item.node)
+  const allGifs = data.allGifs.edges.map((item) => item.node)
+
   const projectElements = data.allProjectsJson.edges.map(({ node }) => {
-    const projectImage = <ProjectImage projectName={node.fields.name} imageName={node.fields.image} isMacWindowScreenshot={node.fields.imageIsMacWindowScreenshot} />
+    const projectImage = <ProjectImage projectName={node.fields.name} imageName={node.fields.image} isMacWindowScreenshot={node.fields.imageIsMacWindowScreenshot} allImages={allImages} allGifs={allGifs} />
     return (
       <li key={node.id}>
         <ProjectElement
@@ -65,6 +68,25 @@ export const query = graphql`
             image
             imageIsMacWindowScreenshot
           }
+        }
+      }
+    }
+    allImages: allImageSharp {
+      edges {
+        node {
+          fluid(maxWidth: 96) {
+            originalName
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+    allGifs: allFile(filter: {extension: {eq: "gif"}}) {
+      edges {
+        node {
+          id
+          publicURL
+          name
         }
       }
     }

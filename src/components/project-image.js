@@ -1,37 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
 import style from './project-image.module.css'
 
-const ProjectImage = ({ projectName, imageName, isMacWindowScreenshot = false }) => {
-  const data = useStaticQuery(graphql`
-    query ProjectImageQuery {
-      allImages: allImageSharp {
-        edges {
-          node {
-            fluid(maxWidth: 96) {
-              originalName
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-      allGifs: allFile(filter: {extension: {eq: "gif"}}) {
-        edges {
-          node {
-            id
-            publicURL
-            name
-          }
-        }
-      }
-    }
-  `)
-  const allImages = data.allImages.edges.map((item) => item.node)
-  const allGifs = data.allGifs.edges.map((item) => item.node)
-
+const ProjectImage = ({ projectName, imageName, isMacWindowScreenshot = false, allImages, allGifs }) => {
   const fluidImage = allImages.filter((image) => {
     return image.fluid.originalName === imageName
   })[0]
