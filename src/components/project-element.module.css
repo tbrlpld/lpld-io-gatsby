@@ -1,0 +1,38 @@
+.projectElement {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.projectElement:hover .projectName {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.projectElement:active .projectName {
+  color: black;
+}
+
+.projectElement .projectLink {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.projectData {
+  margin-left: 16px;
+}
+
+.projectName {
+  margin: 8px 0 12px;
+  font: var(--font-5-bold);
+}
+
+.projectDescription {
+  margin: 0;
+  color: var(--gray-600);
+  font: var(--font-2);
+}

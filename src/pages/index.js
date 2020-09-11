@@ -5,19 +5,20 @@ import Image from 'gatsby-image'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Contact from '../components/contact'
-import ProjectImage from '../components/project-image'
+import ProjectElement from '../components/project-element'
 
 import style from './index.module.css'
 
 const createProjectElement = (projectData) => {
   return (
-    <li key={projectData.id} className={style.projectEntry}>
-      <a href={projectData.path} className={style.projectLink} />
-      <ProjectImage imageName={projectData.image} projectName={projectData.name} isMacWindowScreenshot={projectData.imageIsMacWindowScreenshot} />
-      <div className={style.projectData}>
-        <h3 className={style.projectName}>{projectData.name}</h3>
-        <p className={style.projectDescription}>{projectData.description}</p>
-      </div>
+    <li key={projectData.id}>
+      <ProjectElement
+        projectName={projectData.name}
+        description={projectData.description}
+        url={projectData.path}
+        image={projectData.image}
+        imageIsMacWindowScreenshot={projectData.imageIsMacWindowScreenshot}
+      />
     </li>
   )
 }
