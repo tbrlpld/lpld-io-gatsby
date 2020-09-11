@@ -8,23 +8,35 @@ import Contact from '../components/contact'
 
 import style from './index.module.css'
 
-const IndexPage = ({ data }) => {
-  const projects = data.allProjectsJson.edges.map((project) => {
-    const fluidImage = data.allImages.edges.filter((image) => {
-      return image.node.fluid.originalName === project.node.fields.image
-    })[0]
+const getFluidOrGif = ({ imageName, allImages, allGifs }) => {
+  const fluidImage = allImages.filter((image) => {
+    return image.fluid.originalName === imageName
+  })[0]
 
-    const image = {}
-    if (fluidImage) {
-      image.isGif = false
-      image.fluid = fluidImage.node.fluid
-    } else {
-      const gif = data.allGifs.edges.filter((gif) => {
-        return gif.node.name === project.node.fields.image.slice(0, -4)
-      })[0]
-      image.isGif = true
-      image.src = gif.node.publicURL
-    }
+  const image = {}
+  if (fluidImage) {
+    image.isGif = false
+    image.fluid = fluidImage.fluid
+  } else {
+    const gif = allGifs.filter((gif) => {
+      return gif.name === imageName.slice(0, -4)
+    })[0]
+    image.isGif = true
+    image.src = gif.publicURL
+  }
+  return image
+}
+
+const IndexPage = ({ data }) => {
+  const allImages = data.allImages.edges.map((item) => item.node)
+  const allGifs = data.allGifs.edges.map((item) => item.node)
+
+  const projects = data.allProjectsJson.edges.map((project) => {
+    const image = getFluidOrGif({
+      imageName: project.node.fields.image,
+      allImages: allImages,
+      allGifs: allGifs
+    })
 
     return {
       id: project.node.id,
