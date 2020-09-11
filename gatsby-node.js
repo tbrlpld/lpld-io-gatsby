@@ -5,10 +5,10 @@
  */
 const slugify = require('slugify')
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
+exports.onCreateNode = ({ node, actions, graphql }) => {
   const { createNodeField } = actions
   if (node.internal.type === 'ProjectsJson') {
-    const slug = slugify(node.Name).toLowerCase()
+    const slug = slugify(node.name).toLowerCase()
     createNodeField({
       node,
       name: 'slug',
@@ -18,13 +18,49 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: 'name',
-      value: node.Name
+      value: node.name
     })
 
     createNodeField({
       node,
       name: 'description',
-      value: node.Description
+      value: node.description
+    })
+
+    createNodeField({
+      node,
+      name: 'extendedDescription',
+      value: node.extendedDescription
+    })
+
+    createNodeField({
+      node,
+      name: 'image',
+      value: node.image
+    })
+
+    createNodeField({
+      node,
+      name: 'imageIsMacWindowScreenshot',
+      value: node.imageIsMacWindowScreenshot
+    })
+
+    createNodeField({
+      node,
+      name: 'live',
+      value: node.live
+    })
+
+    createNodeField({
+      node,
+      name: 'github',
+      value: node.github
+    })
+
+    createNodeField({
+      node,
+      name: 'technologies',
+      value: node.technologies.split(',').map((item) => item.toLowerCase())
     })
   }
 }

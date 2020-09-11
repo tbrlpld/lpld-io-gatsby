@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
 import Layout from '../components/layout'
@@ -11,7 +11,7 @@ import style from './index.module.css'
 const IndexPage = ({ data }) => {
   const projects = data.allProjectsJson.edges.map((project) => {
     const fluidImage = data.allImages.edges.filter((image) => {
-      return image.node.fluid.originalName === project.node.Image
+      return image.node.fluid.originalName === project.node.fields.image
     })[0]
 
     const image = {}
@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
       image.fluid = fluidImage.node.fluid
     } else {
       const gif = data.allGifs.edges.filter((gif) => {
-        return gif.node.name === project.node.Image.slice(0, -4)
+        return gif.node.name === project.node.fields.image.slice(0, -4)
       })[0]
       image.isGif = true
       image.src = gif.node.publicURL
@@ -28,10 +28,10 @@ const IndexPage = ({ data }) => {
 
     return {
       id: project.node.id,
-      name: project.node.Name,
-      description: project.node.Description,
+      name: project.node.fields.name,
+      description: project.node.fields.description,
       image: image,
-      imageIsMacWindowScreenshot: project.node.imageIsMacWindowScreenshot
+      imageIsMacWindowScreenshot: project.node.fields.imageIsMacWindowScreenshot
     }
   })
 
@@ -59,7 +59,7 @@ const IndexPage = ({ data }) => {
           <h1>Hi there,</h1>
           <Image className={style.profilePicture} fluid={data.profilePicture.fluid} alt='Profile photo' />
         </div>
-        <p className={style.intro}>I am Tibor. I’m a former automotive engineer on a journey to becoming a full&nbsp;stack&nbsp;develper.</p>
+        <p className={style.intro}>I am Tibor. I’m a former automotive engineer on a journey to becoming a full&nbsp;stack&nbsp;developer.</p>
       </section>
       <section id='projects' className={style.projects}>
         <h2>These are things I have build before</h2>
@@ -102,11 +102,13 @@ export const query = graphql`
     allProjectsJson {
       edges {
         node {
-          Description
-          Image
-          imageIsMacWindowScreenshot
-          Name
           id
+          fields {
+            name
+            description
+            image
+            imageIsMacWindowScreenshot
+          }
         }
       }
     }
