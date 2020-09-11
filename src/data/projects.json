@@ -20,7 +20,7 @@
     "technologies": "Django, Docker, Gatsby, GraphQL, Graphene, Graphene-Django, Headless-CMS, Poetry, Python, Vagrant, Wagtail, Wagtail-Grapple"
   },
   {
-    "name": "LogTweet",
+    "name": "Logtweet",
     "description": "Command line tool to create a tweet based on a #100DaysOfCode log message.",
     "extendedDescription": "The first package I have published on PyPI. I have used this tool to tweet my daily progress during the #100DaysOfCode challenge.\n\nThe fact that the tool currently requires the log to be published in HTML is not ideal. Since that HTML is typically generated from markdown log, it would be a great addition to directly generate the tweet from the markdown log. Unfortunately I have not gotten around to that feature yet.",
     "image": "logtweet.png",

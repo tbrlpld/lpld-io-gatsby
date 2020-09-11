@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
+const path = require('path')
 const slugify = require('slugify')
 
 exports.onCreateNode = ({ node, actions, graphql }) => {
@@ -63,4 +64,32 @@ exports.onCreateNode = ({ node, actions, graphql }) => {
       value: node.technologies.split(',').map((item) => item.toLowerCase())
     })
   }
+}
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  const result = await graphql(`
+    query MyQuery {
+      allProjectsJson {
+        nodes {
+          id
+          fields {
+            name
+            slug
+          }
+        }
+      }
+    }
+  `)
+
+  result.data.allProjectsJson.nodes.forEach((node) => {
+    console.log(node.fields.slug)
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve('./src/templates/project-detail.js'),
+      context: {
+        slug: node.fields.slug
+      }
+    })
+  })
 }
