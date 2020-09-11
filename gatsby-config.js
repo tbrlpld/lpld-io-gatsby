@@ -3,7 +3,13 @@ module.exports = {
     title: 'lpld.io',
     description: 'Projects I have build include a Wagtail-Gatsby prototype blog, a URL shortener, a command line tool to tweet you 100DaysOfCode progress, a React Tic-Tac-Toe Game, and many more. Get in touch and let\'s build something together.',
     author: 'Tibor Leupold',
-    email: 'tibor@lpld.io'
+    email: 'tibor@lpld.io',
+    socialLinks: {
+      linkedin: 'https://www.linkedin.com/in/tbrlpld',
+      twitter: 'https://twitter.com/tbrlpld',
+      github: 'https://github.com/tbrlpld',
+      stackoverflow: 'https://stackoverflow.com/users/6771403/tbr?tab=profile'
+    }
   },
   plugins: [
     'gatsby-plugin-react-helmet',
