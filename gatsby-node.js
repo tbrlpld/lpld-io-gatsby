@@ -18,6 +18,12 @@ exports.onCreateNode = ({ node, actions, graphql }) => {
 
     createNodeField({
       node,
+      name: 'path',
+      value: '/' + slug
+    })
+
+    createNodeField({
+      node,
       name: 'name',
       value: node.name
     })

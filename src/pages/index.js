@@ -39,7 +39,7 @@ const createProjectElement = (projectData) => {
     <li key={projectData.id}>
       {image}
       <div className={style.projectData}>
-        <h3 className={style.projectName}>{projectData.name}</h3>
+        <a href={projectData.path}><h3 className={style.projectName}>{projectData.name}</h3></a>
         <p className={style.projectDescription}>{projectData.description}</p>
       </div>
     </li>
@@ -60,6 +60,7 @@ const IndexPage = ({ data }) => {
     return {
       id: project.node.id,
       name: project.node.fields.name,
+      path: project.node.fields.path,
       description: project.node.fields.description,
       image: image,
       imageIsMacWindowScreenshot: project.node.fields.imageIsMacWindowScreenshot
@@ -122,6 +123,7 @@ export const query = graphql`
           id
           fields {
             name
+            path
             description
             image
             imageIsMacWindowScreenshot
