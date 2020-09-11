@@ -30,8 +30,8 @@
   color: var(--gray-600);
 }
 
-.projects {
-  margin: 48px 0;
+section.projects {
+  margin: 48px 0 96px;
   padding: 64px 0 0;
 }
 

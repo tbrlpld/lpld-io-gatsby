@@ -1,0 +1,13 @@
+.socialLinksList {
+  margin: 0;
+  padding: 18px 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 32px;
+}
+
+.socialLinksList li {
+  display: inline-block;
+  line-height: 1.0;
+}
