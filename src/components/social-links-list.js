@@ -31,7 +31,7 @@ const SocialLinks = () => {
     const url = socialLinks[social]
     if (url) {
       return (
-        <li>
+        <li key={social}>
           <SocialLinkIcon icon={icons[social]} label={social} url={url} />
         </li>
       )

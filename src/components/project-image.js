@@ -4,7 +4,7 @@ import Image from 'gatsby-image'
 
 import style from './project-image.module.css'
 
-const ProjectImage = ({ projectName, imageName, isMacWindowScreenshot = false, allImages, allGifs }) => {
+const ProjectImage = ({ projectName, imageName, isMacWindowScreenshot, allImages, allGifs }) => {
   const fluidImage = allImages.filter((image) => {
     return image.fluid.originalName === imageName
   })[0]
@@ -35,7 +35,13 @@ const ProjectImage = ({ projectName, imageName, isMacWindowScreenshot = false, a
 ProjectImage.props = {
   projectName: PropTypes.string.isRequired,
   imageName: PropTypes.string.isRequired,
+  allImages: PropTypes.array,
+  allGifs: PropTypes.array,
   isMacWindowScreenshot: PropTypes.bool
+}
+
+ProjectImage.props = {
+  isMacWindowScreenshot: false
 }
 
 export default ProjectImage
