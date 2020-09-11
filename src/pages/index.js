@@ -6,19 +6,20 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Contact from '../components/contact'
 import ProjectElement from '../components/project-element'
+import ProjectImage from '../components/project-image'
 
 import style from './index.module.css'
 
 const IndexPage = ({ data }) => {
   const projectElements = data.allProjectsJson.edges.map(({ node }) => {
+    const projectImage = <ProjectImage projectName={node.fields.name} imageName={node.fields.image} isMacWindowScreenshot={node.fields.imageIsMacWindowScreenshot} />
     return (
       <li key={node.id}>
         <ProjectElement
           projectName={node.fields.name}
           description={node.fields.description}
           url={node.fields.path}
-          image={node.fields.image}
-          imageIsMacWindowScreenshot={node.fields.imageIsMacWindowScreenshot}
+          image={projectImage}
         />
       </li>
     )
