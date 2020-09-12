@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import ProjectImage from '../components/project-image'
 import ProjectLink from '../components/project-link'
+import TechPill from '../components/tech-pill'
 
 import style from './project-detail.module.css'
 
@@ -11,6 +12,12 @@ const ProjectDetailPage = ({ data }) => {
   const project = data.projectsJson.fields
   const allFluidImages = data.allImages.edges.map((item) => item.node.fluid)
   const allGifURLs = data.allGifURLs.edges.map((item) => item.node.publicURL)
+
+  const techPills = project.technologies.map((tech) => {
+    return (
+      <TechPill name={tech} />
+    )
+  })
 
   return (
     <Layout>
@@ -31,6 +38,9 @@ const ProjectDetailPage = ({ data }) => {
           {project.live ? <ProjectLink to={project.live}>See it live</ProjectLink> : null}
         </div>
         <p className={style.extendedDescription}>{project.extendedDescription}</p>
+        <div>
+          {techPills}
+        </div>
       </section>
     </Layout>
   )
@@ -49,6 +59,7 @@ export const query = graphql`
         imageIsMacWindowScreenshot
         github
         live
+        technologies
       }
     }
     allImages: allImageSharp {
