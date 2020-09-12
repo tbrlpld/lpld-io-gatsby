@@ -19,7 +19,9 @@ const ProjectImage = ({ projectName, projectImageName, isMacWindowScreenshot, al
   const gif = allGifURLs.filter((gif) => {
     return gif.endsWith(projectImageName)
   })[0]
-  return <img src={gif} className={classNames} alt={'Screencast of ' + projectName} />
+  if (gif) {
+    return <img src={gif} className={classNames} alt={'Screencast of ' + projectName} />
+  }
 }
 
 ProjectImage.props = {
