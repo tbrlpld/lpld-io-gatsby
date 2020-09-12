@@ -3,6 +3,19 @@ section.project {
 }
 
 .project .description {
+  margin: 24px 0;
   font: var(--font-5);
   color: var(--gray-600);
+}
+
+.project .imageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.project .links {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

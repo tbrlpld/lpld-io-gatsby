@@ -1,17 +1,19 @@
 .projectImage {
+  display: block;
   width: 384px;
-  flex-shrink: 0;
+  max-width: 100%;
 }
 
 .projectImage.thumbnail {
   width: 96px;
+  flex-shrink: 0;
 }
 
 .projectImage.notMacScreenshot {
-  width: calc(384px - 2*16px);
-  margin: 0 16px;
+  max-width: calc(100% - 2*12px);
+  margin: 8px 12px 8px;
   border-radius: 3px;
-  box-shadow: var(--shadow-3)
+  box-shadow: var(--shadow-2)
 }
 
 .projectImage.notMacScreenshot.thumbnail {

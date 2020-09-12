@@ -24,6 +24,7 @@ html {
   --font-1: normal 12px/1.5 var(--font-stack);
   --font-2: normal 14px/1.5 var(--font-stack);
   --font-5: normal 20px/1.2 var(--font-stack);
+  --font-2-bold: bold 14px/1.5 var(--font-stack);
   --font-3-bold: bold 16px/1.5 var(--font-stack);
   --font-5-bold: bold 20px var(--font-stack);
   --font-8-bold: bold 36px var(--font-stack);
@@ -54,4 +55,35 @@ h1 {
 
 h2 {
   font: var(--font-8-bold);
+}
+
+.btn {
+  display: block;
+  padding: 16px;
+  width: max-content;
+
+  font: var(--font-2-bold);
+  text-align: center;  
+
+  text-decoration: none;
+  border-radius: 3px;
+  color: white;
+  color: var(--gray-100);
+  background-color: black;
+  background-color: var(--gray-900);
+}
+
+.btn:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px; 
+}
+
+.btn:active {
+  background-color: black;
+}
+
+.btn.large {
+  padding: 24px;
+  font: var(--font-3-bold);
 }

@@ -16,8 +16,9 @@ const ContactButton = () => {
     }
   `)
 
+  const className = 'btn large ' + style.contactBtn
   return (
-    <a className={style.contactBtn} href={'mailto:' + data.site.siteMetadata.email}>
+    <a className={className} href={'mailto:' + data.site.siteMetadata.email}>
       <FontAwesomeIcon icon={faEnvelope} className={'fa-lg ' + style.icon} />
       Send me an email
     </a>
