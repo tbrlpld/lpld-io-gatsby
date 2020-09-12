@@ -15,7 +15,16 @@ const IndexPage = ({ data }) => {
   const allGifURLs = data.allGifs.edges.map((item) => item.node.publicURL)
 
   const projectElements = data.allProjectsJson.edges.map(({ node }) => {
-    const projectImage = <ProjectImage projectName={node.fields.name} projectImageName={node.fields.image} isMacWindowScreenshot={node.fields.imageIsMacWindowScreenshot} allImages={allFluidImages} allGifURLs={allGifURLs} />
+    const projectImage = (
+      <ProjectImage
+        projectName={node.fields.name}
+        projectImageName={node.fields.image}
+        isMacWindowScreenshot={node.fields.imageIsMacWindowScreenshot}
+        allImages={allFluidImages}
+        allGifURLs={allGifURLs}
+        thumbnail
+      />
+    )
     return (
       <li key={node.id}>
         <ProjectElement

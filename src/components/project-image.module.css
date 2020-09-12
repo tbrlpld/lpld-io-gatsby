@@ -1,11 +1,22 @@
 .projectImage {
-  width: 96px;
+  width: 384px;
   flex-shrink: 0;
 }
 
-.projectImageNotMacScreenshot {
-  width: 92px;
+.projectImage.thumbnail {
+  width: 96px;
+}
+
+.projectImage.notMacScreenshot {
+  width: calc(384px - 2*16px);
+  margin: 0 16px;
+  border-radius: 3px;
+  box-shadow: var(--shadow-3)
+}
+
+.projectImage.notMacScreenshot.thumbnail {
+  width: calc(96px - 2*2px);
   margin: 0 2px;
   border-radius: 1px;
-  box-shadow: var(--shadow-1)
+  box-shadow: var(--shadow-1)  
 }
