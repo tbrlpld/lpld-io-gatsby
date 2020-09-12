@@ -12,7 +12,7 @@ import style from './index.module.css'
 
 const IndexPage = ({ data }) => {
   const allFluidImages = data.allImages.edges.map((item) => item.node.fluid)
-  const allGifURLs = data.allGifs.edges.map((item) => item.node.publicURL)
+  const allGifURLs = data.allGifURLs.edges.map((item) => item.node.publicURL)
 
   const projectElements = data.allProjectsJson.edges.map(({ node }) => {
     const projectImage = (
@@ -89,12 +89,10 @@ export const query = graphql`
         }
       }
     }
-    allGifs: allFile(filter: {extension: {eq: "gif"}}) {
+    allGifURLs: allFile(filter: {extension: {eq: "gif"}, relativeDirectory: {eq: "project-images/gif-thumbnails"}}) {
       edges {
         node {
-          id
           publicURL
-          name
         }
       }
     }
