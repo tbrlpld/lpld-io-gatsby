@@ -23,6 +23,7 @@ html {
   --font-stack: Helvetica, 'Helvetica Neue', Arial, sans-serif;
   --font-1: normal 12px/1.5 var(--font-stack);
   --font-2: normal 14px/1.5 var(--font-stack);
+  --font-3: normal 16px/1.5 var(--font-stack);
   --font-5: normal 20px/1.2 var(--font-stack);
   --font-2-bold: bold 14px/1.5 var(--font-stack);
   --font-3-bold: bold 16px/1.5 var(--font-stack);
@@ -59,7 +60,7 @@ h2 {
 
 .btn {
   display: block;
-  padding: 16px;
+  padding: 12px 16px;
   width: max-content;
 
   font: var(--font-2-bold);

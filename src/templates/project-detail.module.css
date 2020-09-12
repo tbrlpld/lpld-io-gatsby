@@ -11,6 +11,7 @@ section.project {
 .project .imageWrapper {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .project .links {
@@ -18,4 +19,11 @@ section.project {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.project .extendedDescription {
+  margin: 48px 0;
+
+  font: var(--font-3);
+  color: var(--gray-600);
 }

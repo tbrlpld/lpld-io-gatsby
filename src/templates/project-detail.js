@@ -26,10 +26,11 @@ const ProjectDetailPage = ({ data }) => {
             allGifURLs={allGifURLs}
           />
         </div>
-        <div className={style.links}>
+        <div className={style.links} style={{ justifyContent: (project.github && project.live) ? 'space-between' : 'center' }}>
           {project.github ? <ProjectLink to={project.github}>See the code</ProjectLink> : null}
           {project.live ? <ProjectLink to={project.live}>See it live</ProjectLink> : null}
         </div>
+        <p className={style.extendedDescription}>{project.extendedDescription}</p>
       </section>
     </Layout>
   )
@@ -43,6 +44,7 @@ export const query = graphql`
       fields {
         name
         description
+        extendedDescription
         image
         imageIsMacWindowScreenshot
         github

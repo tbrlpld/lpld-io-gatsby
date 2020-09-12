@@ -1,7 +1,8 @@
 .projectImage {
-  display: block;
   width: 384px;
   max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .projectImage.thumbnail {
@@ -10,8 +11,8 @@
 }
 
 .projectImage.notMacScreenshot {
-  max-width: calc(100% - 2*12px);
   margin: 8px 12px 8px;
+  
   border-radius: 3px;
   box-shadow: var(--shadow-2)
 }
