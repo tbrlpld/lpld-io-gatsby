@@ -1,6 +1,11 @@
 .contactBtn {
   margin: 96px auto;
 }
+@media (min-width: 1280px) {
+  .contactBtn { 
+    margin: 128px auto;
+  }
+}
 
 .contactBtn .icon {
   margin-right: 12px;

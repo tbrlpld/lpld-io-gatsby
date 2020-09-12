@@ -21,7 +21,7 @@
   },
   {
     "name": "Logtweet",
-    "description": "Command line tool to create a tweet based on a #100DaysOfCode log message.",
+    "description": "Command line tool to create a tweet based on a #100DaysOfCode log message",
     "extendedDescription": "The first package I have published on PyPI. I have used this tool to tweet my daily progress during the #100DaysOfCode challenge.\n\nThe fact that the tool currently requires the log to be published in HTML is not ideal. Since that HTML is typically generated from markdown log, it would be a great addition to directly generate the tweet from the markdown log. Unfortunately I have not gotten around to that feature yet.",
     "image": "logtweet.png",
     "imageIsMacWindowScreenshot": true,
@@ -31,7 +31,7 @@
   },
   {
     "name": "Log100Days (Gatsby)",
-    "description": "Gatsby project to render a #100DaysOfCode markdown log into a static website.",
+    "description": "Gatsby project to render a #100DaysOfCode markdown log into a static website",
     "extendedDescription": "",
     "image": "log100days-gatsby.png",
     "imageIsMacWindowScreenshot": true,
@@ -41,7 +41,7 @@
   },
   {
     "name": "Log100Days (Quart)",
-    "description": "Containerized Quart app to display a markdown log for the #100DaysOfCode challenge as a website.",
+    "description": "Containerized Quart app to display a markdown log for the #100DaysOfCode challenge as a website",
     "extendedDescription": "I have also created a https://github.com/tbrlpld/log100days-gatsby, because it is overkill to do the conversion from markdown to HTML on every request for content that is only updated once a day.",
     "image": "log100days-quart.png",
     "imageIsMacWindowScreenshot": true,
@@ -61,7 +61,7 @@
   },
   {
     "name": "Flaskr",
-    "description": "Flask based blog app build as an extended version of the Flask tutorial.",
+    "description": "Flask based blog app build as an extended version of the Flask tutorial",
     "extendedDescription": "The extension includes the following features : detail post view, likes, comments, tags, title search, pagination, image upload, markdown formatting and RSS feed.\n\nIt is definitely not pretty, but that was not the point of the exercise.",
     "image": "flaskr.png",
     "imageIsMacWindowScreenshot": true,

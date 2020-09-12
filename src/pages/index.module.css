@@ -1,6 +1,5 @@
 .welcome {
-  margin: 64px 0 0;
-  padding: 48px 0;
+  padding: 128px 0;
 }
 
 .welcome .headingWrapper {
@@ -19,6 +18,16 @@
   box-shadow: var(--shadow-inner-3);
   border-radius: 100%;
 }
+@media (min-width: 640px) {
+  .welcome .profilePicture {
+    width: 128px;
+  }
+}
+@media (min-width: 1280px) {
+  .welcome .profilePicture {
+    width: 256px;
+  }
+}
 
 .welcome .profilePicture img {
   z-index: -1;
@@ -26,27 +35,65 @@
 
 .welcome .intro {
   margin: 32px 0 0;
+  max-width: 384px;
   font: var(--font-5);
   color: var(--gray-600);
 }
+@media (min-width: 640px) {
+  .welcome .intro {
+    font: var(--font-6);
+  }
+}
+@media (min-width: 1280px) {
+  .welcome .intro {
+    margin-top: 48px;
+    max-width: 640px;
+    font: var(--font-8);
+  }
+}
 
 section.projects {
-  margin: 48px 0 96px;
-  padding: 64px 0 0;
+  margin: 0 0 96px;
+  padding: 96px 0 0;
 }
 
 .projects h2 {
-  margin: 0;
+  margin: 0 0 64px;
+  max-width: 512px;
+}
+@media (min-width: 640px) {
+  .projects h2 { 
+    max-width: 640px
+  }
+}
+@media (min-width: 1280px) {
+  .projects h2 { 
+    margin-bottom: 128px;
+    max-width: 768px
+  }
 }
 
 .projects ul {
-  margin: 64px 0 0; 
+  margin: 0; 
   padding: 0;
+}
+@media (min-width: 1280px) {
+  .projects ul { 
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -64px;
+  }
 }
 
 .projects ul li {
   margin: 64px 0 0;
   padding: 0;
   display: block;
+}
+@media (min-width: 1280px) {
+  .projects ul li { 
+    flex-shrink: 0;
+    padding-left: 64px;
+  }
 }
 

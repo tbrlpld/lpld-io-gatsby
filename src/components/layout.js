@@ -15,8 +15,10 @@ import Footer from './footer'
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
-      <main>{children}</main>
+      <div className='headerAndMainWrapper'>
+        <Header />
+        <main>{children}</main>
+      </div>
       <Footer />
     </>
   )

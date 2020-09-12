@@ -1,3 +1,12 @@
 section.contact {
-  padding: 48px 0 96px;
+  padding: 96px 0;
+}
+
+.contact h2 {
+  max-width: 512px;
+}
+@media (min-width: 1280px) {
+  .contact h2 { 
+    max-width: 640px;
+  }
 }

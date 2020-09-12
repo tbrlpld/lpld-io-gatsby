@@ -24,12 +24,25 @@ html {
   --font-1: normal 12px/1.5 var(--font-stack);
   --font-2: normal 14px/1.5 var(--font-stack);
   --font-3: normal 16px/1.5 var(--font-stack);
+  --font-4: normal 18px/1.5 var(--font-stack);
   --font-5: normal 20px/1.2 var(--font-stack);
+  --font-6: normal 24px/1.2 var(--font-stack);
+  --font-7: normal 30px var(--font-stack);
+  --font-8: normal 36px var(--font-stack);
+  --font-9: normal 48px var(--font-stack);
+  --font-10: normal 60px var(--font-stack);
+  --font-11: normal 76px var(--font-stack);
   --font-1-bold: bold 12px/1.5 var(--font-stack);
   --font-2-bold: bold 14px/1.5 var(--font-stack);
   --font-3-bold: bold 16px/1.5 var(--font-stack);
+  --font-4-bold: bold 18px/1.5 var(--font-stack);
   --font-5-bold: bold 20px var(--font-stack);
+  --font-6-bold: bold 24px var(--font-stack);
+  --font-7-bold: bold 30px var(--font-stack);
   --font-8-bold: bold 36px var(--font-stack);
+  --font-9-bold: bold 48px var(--font-stack);
+  --font-10-bold: bold 60px var(--font-stack);
+  --font-11-bold: bold 76px var(--font-stack);
 
   background-color: white;
   background-color: var(--gray-100);
@@ -47,16 +60,52 @@ body {
   padding: 0;
 }
 
+.headerAndMainWrapper {
+  max-width: 992px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 main {
   margin: 0 24px;
+}
+@media (min-width: 640px) {
+  main {
+    margin: 0 64px;
+  }
+}
+@media (min-width: 1280px) {
+  main {
+    margin: 0;
+  }
 }
 
 h1 {
   font: var(--font-8-bold);
 }
+@media (min-width: 640px) {
+  h1 {
+    font: var(--font-9-bold);
+  }
+}
+@media (min-width: 1280px) {
+  h1 {
+    font: var(--font-11-bold);
+  }
+}
 
 h2 {
   font: var(--font-8-bold);
+}
+@media (min-width: 640px) {
+  h2 {
+    font: var(--font-9-bold);
+  }
+}
+@media (min-width: 1280px) {
+  h2 {
+    font: var(--font-10-bold);
+  }
 }
 
 .btn {
@@ -88,4 +137,10 @@ h2 {
 .btn.large {
   padding: 24px;
   font: var(--font-3-bold);
+}
+@media (min-width: 1280px) {
+  .btn.large {
+    padding: 32px;
+    font: var(--font-6-bold);
+  }
 }

@@ -1,10 +1,21 @@
 .socialLinksList {
-  margin: 0;
+  margin: 0 auto;
   padding: 18px 32px;
+  max-width: 512px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 32px;
+  font-size: 30px;
+}
+@media (min-width: 640px) {
+  .socialLinksList {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .socialLinksList {
+    font-size: 48px;
+  }
 }
 
 .socialLinksList li {
