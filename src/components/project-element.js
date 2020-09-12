@@ -1,7 +1,6 @@
 import React from 'react'
 
 import style from './project-element.module.css'
-import ProjectImage from './project-image'
 
 const ProjectElement = ({ projectName, description, url, image }) => {
   return (

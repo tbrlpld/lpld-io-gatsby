@@ -4,39 +4,29 @@ import Image from 'gatsby-image'
 
 import style from './project-image.module.css'
 
-const ProjectImage = ({ projectName, imageName, isMacWindowScreenshot, allImages, allGifs }) => {
-  const fluidImage = allImages.filter((image) => {
-    return image.fluid.originalName === imageName
-  })[0]
-
-  const image = {}
-  if (fluidImage) {
-    image.isGif = false
-    image.fluid = fluidImage.fluid
-  } else {
-    const gif = allGifs.filter((gif) => {
-      return gif.name === imageName.slice(0, -4)
-    })[0]
-    image.isGif = true
-    image.src = gif.publicURL
-  }
-
+const ProjectImage = ({ projectName, projectImageName, isMacWindowScreenshot, allImages, allGifURLs }) => {
   const classNames = isMacWindowScreenshot
     ? style.projectImage
     : style.projectImage + ' ' + style.projectImageNotMacScreenshot
 
-  if (image.isGif) {
-    return <img src={image.src} className={classNames} alt={'Screencast of ' + projectName} />
-  } else {
-    return <Image fluid={image.fluid} className={classNames} alt={'Screenshot of ' + projectName} />
+  const fluidImage = allImages.filter((image) => {
+    return image.src.endsWith(projectImageName)
+  })[0]
+  if (fluidImage) {
+    return <Image fluid={fluidImage} className={classNames} alt={'Screenshot of ' + projectName} />
   }
+
+  const gif = allGifURLs.filter((gif) => {
+    return gif.endsWith(projectImageName)
+  })[0]
+  return <img src={gif} className={classNames} alt={'Screencast of ' + projectName} />
 }
 
 ProjectImage.props = {
   projectName: PropTypes.string.isRequired,
-  imageName: PropTypes.string.isRequired,
+  projectImageName: PropTypes.string.isRequired,
   allImages: PropTypes.array,
-  allGifs: PropTypes.array,
+  allGifURLs: PropTypes.array,
   isMacWindowScreenshot: PropTypes.bool
 }
 
