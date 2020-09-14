@@ -102,11 +102,6 @@ h2 {
     font: var(--font-9-bold);
   }
 }
-@media (min-width: 1280px) {
-  h2 {
-    font: var(--font-10-bold);
-  }
-}
 
 .btn {
   display: block;

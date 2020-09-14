@@ -52,23 +52,16 @@
 }
 
 section.projects {
-  margin: 0 0 96px;
-  padding: 96px 0 0;
+  margin: 128px 0 0;
+  padding: 128px 0 0;
 }
 
 .projects h2 {
-  margin: 0 0 64px;
   max-width: 512px;
 }
 @media (min-width: 640px) {
   .projects h2 { 
     max-width: 640px
-  }
-}
-@media (min-width: 1280px) {
-  .projects h2 { 
-    margin-bottom: 128px;
-    max-width: 768px
   }
 }
 
@@ -78,9 +71,9 @@ section.projects {
 }
 @media (min-width: 1280px) {
   .projects ul { 
+    margin: 128px -32px 0;
     display: flex;
     flex-wrap: wrap;
-    margin-left: -64px;
   }
 }
 
@@ -92,7 +85,7 @@ section.projects {
 @media (min-width: 1280px) {
   .projects ul li { 
     flex-shrink: 0;
-    padding-left: 64px;
+    padding: 0 32px;
   }
 }
 
