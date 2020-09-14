@@ -90,7 +90,7 @@ h1 {
 }
 @media (min-width: 1280px) {
   h1 {
-    font: var(--font-11-bold);
+    font: var(--font-10-bold);
   }
 }
 

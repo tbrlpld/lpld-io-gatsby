@@ -1,5 +1,5 @@
 .welcome {
-  padding: 128px 0;
+  margin: 128px 0 0;
 }
 
 .welcome .headingWrapper {
@@ -47,8 +47,7 @@
 @media (min-width: 1280px) {
   .welcome .intro {
     margin-top: 48px;
-    max-width: 640px;
-    font: var(--font-8);
+    max-width: 512px;
   }
 }
 
