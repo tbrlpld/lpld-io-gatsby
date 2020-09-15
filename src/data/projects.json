@@ -81,7 +81,7 @@
   },
   {
     "name": "PlotGraph",
-    "description": "Sublime Text package to plot number columns as graphs.",
+    "description": "Sublime Text package to plot number columns as graphs",
     "extendedDescription": "",
     "image": "plotgraph.png",
     "imageIsMacWindowScreenshot": false,
