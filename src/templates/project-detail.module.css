@@ -31,7 +31,7 @@ section.project {
 @media (min-width: 1280px) {
   .project .description {
     margin-top: 48px;
-    font: var(--font-8);
+    font: var(--font-7);
   }
 }
 
