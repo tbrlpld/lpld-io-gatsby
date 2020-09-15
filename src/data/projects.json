@@ -2,7 +2,7 @@
   {
     "name": "Wagtail Gatsby Blog (Frontend)",
     "description": "Frontend for a prototype Wagtail-Gatsby blog",
-    "extendedDescription": "I created this project to figure out how I can use Wagtail as a headless CMS for a static website build with Gatsby. The backend makes use of Wagtail-Grapple to create the GraphQL endpoint. The GraphQL endpoint is consumed on the frontend with the help of the gatsby-source-wagtail plugin. Design and content are certainly not great, as I was focused on the technical implementation.",
+    "extendedDescription": "I created this project to figure out how I can use Wagtail as a headless CMS for a static website build with Gatsby. The backend makes use of Wagtail-Grapple to create the GraphQL endpoint. The GraphQL endpoint is consumed on the frontend with the help of the gatsby-source-wagtail plugin.<br /><br />Design and content are certainly not great, as I was focused on the technical implementation.",
     "image": "wagtail-gatsby-blog-frontend.png",
     "imageIsMacWindowScreenshot": true,
     "github": "https://github.com/tbrlpld/wagtail-gatsby-blog-frontend",

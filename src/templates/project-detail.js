@@ -50,7 +50,7 @@ const ProjectDetailPage = ({ data }) => {
                   : null
               }
             </div>
-            <p className={style.extendedDescription}>{project.extendedDescription}</p>
+            <p className={style.extendedDescription} dangerouslySetInnerHTML={{ __html: project.extendedDescription }} />
           </div>
         </div>
         <div className={style.techPillsContainer}>
