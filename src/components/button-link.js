@@ -1,15 +1,25 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import style from './button-link.module.css'
 
-const ButtonLink = (props) => {
-  let className = `${style.buttonLink} ${props.className}`
-  if (props.large) { className += ` ${style.large}` }
-  return (
-    <a className={className} href={props.href}>
-      {props.children}
-    </a>
-  )
+const ButtonLink = ({ className, large, href, children }) => {
+  let classNames = `${style.buttonLink} ${className}`
+  if (large) { classNames += ` ${style.large}` }
+  const external = href.startsWith('http')
+  if (external) {
+    return (
+      <a className={classNames} href={href} target='_blank' rel='noopener noreferrer'>
+        {children}
+      </a>
+    )
+  } else {
+    return (
+      <Link className={classNames} to={href}>
+        {children}
+      </Link>
+    )
+  }
 }
 
 export default ButtonLink
