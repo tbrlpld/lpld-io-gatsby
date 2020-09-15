@@ -1,9 +1,9 @@
 import React from 'react'
 
-import style from './contact.module.css'
-
 import ContactButton from './contact-button'
 import SocialLinks from './social-links-list'
+
+import style from './contact.module.css'
 
 const Contact = (props) => {
   return (

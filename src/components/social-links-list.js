@@ -2,8 +2,9 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { faLinkedin, faTwitter, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
 
-import style from './social-links-list.module.css'
 import SocialLinkIcon from './social-link'
+
+import style from './social-links-list.module.css'
 
 const SocialLinks = () => {
   const data = useStaticQuery(graphql`
