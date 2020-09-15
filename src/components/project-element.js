@@ -9,7 +9,7 @@ const ProjectElement = ({ projectName, description, url, image }) => {
 
       {image || null}
       <div className={style.projectData}>
-        <Link href={url} className={style.projectLink}>
+        <Link to={url} className={style.projectLink}>
           <h3 className={style.projectName}>{projectName}</h3>
         </Link>
         <p className={style.projectDescription}>{description}</p>
