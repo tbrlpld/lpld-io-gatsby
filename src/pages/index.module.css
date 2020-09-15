@@ -23,6 +23,11 @@
     width: 128px;
   }
 }
+@media (min-width: 992px) {
+  .welcome .profilePicture {
+    width: 192px;
+  }
+}
 @media (min-width: 1280px) {
   .welcome .profilePicture {
     width: 256px;
@@ -72,26 +77,38 @@ section.projects {
 }
 
 .projects ul {
-  margin: 0; 
+  margin: 64px 0 0; 
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  .projects ul { 
+    margin: 96px -16px 0;
+    flex-direction: row;
+  }
 }
 @media (min-width: 1280px) {
   .projects ul { 
-    margin: 128px -32px 0;
-    display: flex;
-    flex-wrap: wrap;
+    margin: 128px -32px -64px;
   }
 }
 
 .projects ul li {
-  margin: 64px 0 0;
-  padding: 0;
   display: block;
+  margin: 0;
+  padding: 0 0 64px;
+  flex-shrink: 0;
+}
+@media (min-width: 992px) {
+  .projects ul li { 
+    padding: 0 16px 64px;
+  }
 }
 @media (min-width: 1280px) {
   .projects ul li { 
-    flex-shrink: 0;
-    padding: 0 32px;
+    padding: 0 32px 64px;
   }
 }
 
