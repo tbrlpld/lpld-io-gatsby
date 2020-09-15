@@ -15,9 +15,9 @@ const ProjectDetailPage = ({ data }) => {
   const allFluidImages = data.allImages.edges.map((item) => item.node.fluid)
   const allGifURLs = data.allGifURLs.edges.map((item) => item.node.publicURL)
 
-  const techPills = project.technologies.map((tech) => {
+  const techPills = project.technologies.map((tech, index) => {
     return (
-      <TechPill name={tech} />
+      <TechPill name={tech} key={index} />
     )
   })
 
