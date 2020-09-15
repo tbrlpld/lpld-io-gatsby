@@ -42,12 +42,12 @@
   {
     "name": "Log100Days (Quart)",
     "description": "Containerized Quart app to display a markdown log for the #100DaysOfCode challenge as a website",
-    "extendedDescription": "I have also created a https://github.com/tbrlpld/log100days-gatsby, because it is overkill to do the conversion from markdown to HTML on every request for content that is only updated once a day.",
+    "extendedDescription": "This app was initially build as a Flask learning exercise  and later on turned into a Quart app. Because Quart uses basically the same API as Flask, the changes where minimal but allowed the app to enjoy the asynchronous performance benefits.<br/><br/>The performance improvement through async are especially valuable in this app, because it pulled in external data (Markdown) and converted it into HTML on every request. Of course, that is still not a great process for an app that displays content that is only updated once per day. Because of that, I have also created <a href='/log100days-(gatsby)'>Log100Days (Gatsby)</a>, which generates a static site upon every update in the Markdown repository (which is way more efficient than even the async version of the dynamic app).",
     "image": "log100days-quart.png",
     "imageIsMacWindowScreenshot": true,
     "github": "https://github.com/tbrlpld/log100days",
     "live": "",
-    "technologies": "Docker, Flask, Python, Quart"
+    "technologies": "Python, Flask, Quart, Asyncio, Docker"
   },
   {
     "name": "Short",
