@@ -53,7 +53,9 @@ const IndexPage = ({ data }) => {
           {projectElements}
         </ul>
       </section>
-      <Contact />
+      <section id='contact' className={style.contact}>
+        <Contact />
+      </section>
     </Layout>
   )
 }
