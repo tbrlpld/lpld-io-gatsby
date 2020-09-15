@@ -25,25 +25,39 @@ const ProjectDetailPage = ({ data }) => {
       <section className={style.project}>
         <h1>{project.name}</h1>
         <p className={style.description}>{project.description}</p>
-        <div className={style.imageWrapper}>
-          <ProjectImage
-            projectName={project.name}
-            projectImageName={project.image}
-            isMacWindowScreenshot={project.imageIsMacWindowScreenshot}
-            allImages={allFluidImages}
-            allGifURLs={allGifURLs}
-          />
+        <div className={style.dataWrapper}>
+          <div className={style.imageWrapper}>
+            <ProjectImage
+              projectName={project.name}
+              projectImageName={project.image}
+              isMacWindowScreenshot={project.imageIsMacWindowScreenshot}
+              allImages={allFluidImages}
+              allGifURLs={allGifURLs}
+            />
+          </div>
+          <div>
+            <div className={`${style.links} ` + ((project.github && project.live) ? style.multipleLinks : style.singleLink)}>
+              {
+                project.github
+                  ? <div className={style.projectLinkWrapper}><ProjectLink to={project.github} className={style.projectLink}>See the code</ProjectLink></div>
+                  : null
+              }
+              {
+                project.live
+                  ? <div className={style.projectLinkWrapper}><ProjectLink to={project.live} className={style.projectLink}>See it live</ProjectLink></div>
+                  : null
+              }
+            </div>
+            <p className={style.extendedDescription}>{project.extendedDescription}</p>
+          </div>
         </div>
-        <div className={style.links} style={{ justifyContent: (project.github && project.live) ? 'space-between' : 'center' }}>
-          {project.github ? <ProjectLink to={project.github}>See the code</ProjectLink> : null}
-          {project.live ? <ProjectLink to={project.live}>See it live</ProjectLink> : null}
-        </div>
-        <p className={style.extendedDescription}>{project.extendedDescription}</p>
         <div>
           {techPills}
         </div>
       </section>
-      <Contact />
+      <section id='contact' className={style.contact}>
+        <Contact />
+      </section>
     </Layout>
   )
 }
