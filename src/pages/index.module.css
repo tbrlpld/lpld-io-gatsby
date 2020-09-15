@@ -52,8 +52,14 @@
 }
 
 section.projects {
-  margin: 128px 0 0;
-  padding: 128px 0 0;
+  margin: 64px 0 0;
+  padding: 64px 0 0;
+}
+@media (min-width: 1280px) {
+  section.projects {
+    margin: 128px 0 0;
+    padding: 128px 0 0;
+  }
 }
 
 .projects h2 {
@@ -89,7 +95,13 @@ section.projects {
   }
 }
 
-.contact {
-  margin: 128px 0 128px;
-  padding-top: 128px;
+section.contact {
+  margin: 64px 0 128px;
+  padding-top: 64px;
+}
+@media (min-width: 1280px) {
+  section.contact {
+    margin: 128px 0 128px;
+    padding-top: 128px;
+  }
 }

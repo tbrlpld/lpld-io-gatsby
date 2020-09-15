@@ -58,7 +58,7 @@
     font: var(--font-3);
   }
 }
-@media (min-width: 128px) {
+@media (min-width: 1280px) {
   .projectDescription {
     font: var(--font-4);
   }
