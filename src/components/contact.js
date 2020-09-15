@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <section id='contact' className={style.contact}>
       <h2>Let's build something together</h2>
-      <ContactButton />
+      <ContactButton className={style.contactButton} />
       <SocialLinks />
     </section>
   )

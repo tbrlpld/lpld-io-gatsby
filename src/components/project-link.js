@@ -1,11 +1,12 @@
 import React from 'react'
 
+import ButtonLink from './button-link'
+
 import style from './project-link.module.css'
 
 const ProjectLink = ({ children, to }) => {
-  const className = 'btn ' + style.projectLink
   return (
-    <a className={className} href={to}>{children}</a>
+    <ButtonLink className={style.projectLink} href={to}>{children}</ButtonLink>
   )
 }
 
