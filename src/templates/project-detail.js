@@ -35,7 +35,7 @@ const ProjectDetailPage = ({ data }) => {
               allGifURLs={allGifURLs}
             />
           </div>
-          <div>
+          <div className={style.linksAndExtendedDescriptionWrapper}>
             <div className={`${style.links} ` + ((project.github && project.live) ? style.multipleLinks : style.singleLink)}>
               {
                 project.github
@@ -51,7 +51,7 @@ const ProjectDetailPage = ({ data }) => {
             <p className={style.extendedDescription}>{project.extendedDescription}</p>
           </div>
         </div>
-        <div>
+        <div className={style.techPillsContainer}>
           {techPills}
         </div>
       </section>
