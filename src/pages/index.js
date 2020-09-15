@@ -2,11 +2,11 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
 import Contact from '../components/contact'
+import Layout from '../components/layout'
 import ProjectElement from '../components/project-element'
 import ProjectImage from '../components/project-image'
+import SEO from '../components/seo'
 
 import style from './index.module.css'
 

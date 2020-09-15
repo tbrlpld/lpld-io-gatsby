@@ -1,12 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
+import Contact from '../components/contact'
 import Layout from '../components/layout'
 import ProjectImage from '../components/project-image'
 import ProjectLink from '../components/project-link'
-import TechPill from '../components/tech-pill'
-import Contact from '../components/contact'
 import SEO from '../components/seo'
+import TechPill from '../components/tech-pill'
 
 import style from './project-detail.module.css'
 
