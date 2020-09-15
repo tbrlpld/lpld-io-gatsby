@@ -6,6 +6,7 @@ import ProjectImage from '../components/project-image'
 import ProjectLink from '../components/project-link'
 import TechPill from '../components/tech-pill'
 import Contact from '../components/contact'
+import SEO from '../components/seo'
 
 import style from './project-detail.module.css'
 
@@ -22,6 +23,7 @@ const ProjectDetailPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={project.name} description={project.description} />
       <section className={style.project}>
         <h1>{project.name}</h1>
         <p className={style.description}>{project.description}</p>
