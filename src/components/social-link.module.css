@@ -1,3 +1,5 @@
-a {
+.socialLink,
+.socialLink:hover {
   color: inherit;
+  border: none;
 }
