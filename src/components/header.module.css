@@ -20,6 +20,13 @@ header {
   }
 }
 
+header a,
+header a:hover,
+header a:active {
+  text-decoration: none;
+  border: none;
+}
+
 .logo {
   display: block;
   height: 48px;

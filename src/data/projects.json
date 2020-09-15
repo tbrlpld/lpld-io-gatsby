@@ -12,7 +12,7 @@
   {
     "name": "Wagtail Gatsby Blog (Backend)",
     "description": "Backend for a prototype Wagtail-Gatsby blog",
-    "extendedDescription": "I created this project to figure out how I can use Wagtail as a headless CMS for a static website build with Gatsby. The backend makes use of Wagtail-Grapple to create the GraphQL endpoint. The GraphQL endpoint is consumed on the frontend with the help of the gatsby-source-wagtail plugin. Design and content are certainly not great, as I was focused on the technical implementation.",
+    "extendedDescription": "I created this project to figure out how I can use Wagtail as a headless CMS for a static website build with Gatsby. The backend makes use of Wagtail-Grapple to create the GraphQL endpoint. The GraphQL endpoint is consumed on the frontend with the help of the gatsby-source-wagtail plugin.<br /><br />Design and content are certainly not great, as I was focused on the technical implementation.",
     "image": "wagtail-gatsby-blog-backend.png",
     "imageIsMacWindowScreenshot": true,
     "github": "https://github.com/tbrlpld/wagtail-gatsby-blog-backend",
@@ -22,12 +22,12 @@
   {
     "name": "Logtweet",
     "description": "Command line tool to create a tweet based on a #100DaysOfCode log message",
-    "extendedDescription": "The first package I have published on PyPI. I have used this tool to tweet my daily progress during the #100DaysOfCode challenge.\n\nThe fact that the tool currently requires the log to be published in HTML is not ideal. Since that HTML is typically generated from markdown log, it would be a great addition to directly generate the tweet from the markdown log. Unfortunately I have not gotten around to that feature yet.",
+    "extendedDescription": "This is the first package I have published on PyPI. I have used this tool to tweet my daily progress during the #100DaysOfCode challenge.<br /><br />Tweets are generated based on an HTML log of a given format. I used <a href='/log100days-(gatsby)'>another project of mine (Log100Days)</a> to generate the HTML site from my Markdown journaling repo. The fact that the tool currently requires the log to be published as HTML is certainly not ideal. Since that HTML is generated from a Markdown log anyways, it would be a great addition to directly generate the tweet from the Markdown log. Unfortunately I have not gotten around to that feature yet.",
     "image": "logtweet.png",
     "imageIsMacWindowScreenshot": true,
     "github": "https://github.com/tbrlpld/logtweet",
     "live": "https://pypi.org/project/logtweet/",
-    "technologies": "BeautifulSoup, Pytest, Python, Twitter, mypy"
+    "technologies": "Python, BeautifulSoup, web-scraping, Pytest, Twitter-API, mypy, "
   },
   {
     "name": "Log100Days (Gatsby)",
