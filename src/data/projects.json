@@ -107,17 +107,17 @@
     "imageIsMacWindowScreenshot": false,
     "github": "https://github.com/tbrlpld/tictactoe",
     "live": "https://tictactoe.lpld.io",
-    "technologies": "JSX, JavaScript, React"
+    "technologies": "JavaScript, React, JSX"
   },
   {
     "name": "Remember Me",
     "description": "Web browser memory game (created for the Udacity Nanodegree \"Intro to Programming\")",
-    "extendedDescription": "",
+    "extendedDescription": "I created RememberMe as the topic of my final project for the Udacity Nanodegree \"Intro to Programming\". The functional requirements (memory game logic, timer, move counter, star rating, congratulations, etc.) were predefined. A design mock-up was also provided, but not strictly required for implementation. My design is inspired by the mock-up but does not follow it closely. It was the goal of the project to turn the given functional requirements into a working JavaScript browser game. Apart from the required functionality, the game includes CSS animations for card flipping, pair rejection and pair matching.",
     "image": "rememberme.png",
     "imageIsMacWindowScreenshot": false,
     "github": "https://github.com/tbrlpld/remember-me",
     "live": "https://rememberme.lpld.io",
-    "technologies": "CSS, HTML, JavaScript, jQuery"
+    "technologies": "JavaScript, jQuery, HTML, CSS"
   },
   {
     "name": "Fill in the Gaps",
@@ -137,7 +137,7 @@
     "imageIsMacWindowScreenshot": false,
     "github": "",
     "live": "https://codepen.io/tbrlpld/full/LYpbeRg",
-    "technologies": "CSS, HTML"
+    "technologies": "HTML, CSS"
   },
   {
     "name": "Technical Documentation",
@@ -147,7 +147,7 @@
     "imageIsMacWindowScreenshot": false,
     "github": "",
     "live": "https://codepen.io/tbrlpld/full/rNOpZgo",
-    "technologies": ""
+    "technologies": "HTML, CSS"
   },
   {
     "name": "Product Landing Page",
@@ -157,7 +157,7 @@
     "imageIsMacWindowScreenshot": false,
     "github": "",
     "live": "https://codepen.io/tbrlpld/full/ExVXrQo",
-    "technologies": "CSS, HTML"
+    "technologies": "HTML, CSS"
   },
   {
     "name": "Survey Form",
@@ -167,6 +167,6 @@
     "imageIsMacWindowScreenshot": false,
     "github": "",
     "live": "https://codepen.io/tbrlpld/full/KKdaEzb",
-    "technologies": "CSS, HTML"
+    "technologies": "HTML, CSS"
   }
 ]
