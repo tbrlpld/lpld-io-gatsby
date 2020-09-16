@@ -51,13 +51,13 @@
   },
   {
     "name": "Short",
-    "description": "URL shortener app, build with Flask, deployed with Zappa to AWS Lambda and Dynamo DB",
-    "extendedDescription": "",
+    "description": "URL shortener app, build with Flask and AWS Dynamo DB and deployed with Zappa to AWS Lambda",
+    "extendedDescription": "During the #100DaysOfCode challenge I was not only keeping a <a href='https://log100days.lpld.io' target='_blank'>log of my progress</a>, but also <a href='https://twitter.com/tbrlpld' target='_blank'>tweeting</a> about it. In those tweets I also typically included a link to the commit showing the code I had created that day. Because of the size length limitation of tweets, I did not want to waste characters on the link (which is typically pretty long when linking to a specific commit on GitHub) and therefore used URL shortener services like Bit.ly or TinyURL. ",
     "image": "short.gif",
     "imageIsMacWindowScreenshot": false,
     "github": "https://github.com/tbrlpld/short",
     "live": "https://s.lpld.io",
-    "technologies": "AWS DynamoDB, AWS Lamba, Flask, Python, Zappa"
+    "technologies": "Python, Flask, Zappa, AWS DynamoDB, AWS Lamba"
   },
   {
     "name": "Flaskr",
