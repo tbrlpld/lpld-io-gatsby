@@ -122,7 +122,7 @@
   {
     "name": "Fill in the Gaps",
     "description": "Command line fill-in-the-gaps quiz game (created for the Udacity Nanodegree \"Intro to Programming\")",
-    "extendedDescription": "",
+    "extendedDescription": "This is a simple python command line game quiz game I created during the Udacity Nanodegree \"Intro to Programming\".<br/><br/>The player can select one of three levels (easy, medium or hard) which define the quiz that will be shown. The player can select the number of wrong guesses allowed (default is&nbsp;3). Once both choices are made, the game starts.<br/><br/>During the game, the player is presented with a paragraph of text with certain words blanked out. the player is asked to fill one gap after the other. Once all gaps are filled correctly, the game ends with a win for the player. If the player makes wrong guess, then a counter is increased and the same question is presented again. If the player exceeds the number of allowed wrong guesses before all blanks are filled correctly then the game ends with a loss.",
     "image": "fill-in-the-gaps.gif",
     "imageIsMacWindowScreenshot": false,
     "github": "https://github.com/tbrlpld/fill-in-the-gaps",
