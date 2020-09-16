@@ -32,12 +32,12 @@
   {
     "name": "Log100Days (Gatsby)",
     "description": "Gatsby project to render a #100DaysOfCode markdown log into a static website",
-    "extendedDescription": "",
+    "extendedDescription": "I used this app to display <a href='https://github.com/tbrlpld/100-days-of-code' target='_blank'>my Markdown log</a>, that I used to document progress during the #100DaysOfCode challenge, as a website. This is the static version of a <a href='/log100days-(quart)'>dynamic Flask/Quart app</a> I had created as a learning exercise during the challenge. I switched to this static version, because it fits the static nature (updated once a day) of the content better and should be much more efficient for this purpose. I also wanted to practice Gatsby.<br/><br/>This project is a little different from the typical Gatsby project that generates HTML from Markdown files in that the Markdown files live in their own separate repository. To still have the site rebuild automatically when the content is updated, I added <a href='https://github.com/tbrlpld/100-days-of-code/blob/master/.github/workflows/update-netlify.yml'>a simple GitHub action</a> to the content repository that triggers the Netlify build hook.",
     "image": "log100days-gatsby.png",
     "imageIsMacWindowScreenshot": true,
     "github": "https://github.com/tbrlpld/log100days-gatsby",
     "live": "https://log100days.lpld.io",
-    "technologies": "CSS Modules, Gatsby, GitHub Actions, JSX, JavaScript, React"
+    "technologies": " JavaScript, React, JSX, Gatsby, CSS Modules, GitHub Actions, Netlify"
   },
   {
     "name": "Log100Days (Quart)",
