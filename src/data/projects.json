@@ -92,7 +92,7 @@
   {
     "name": "100 Days Of Web in Python",
     "description": "45 (mini) projects I created from the \"100 Days Of Web in Python\" course during the 100DaysOfCode challenge",
-    "extendedDescription": "Most projects where create in a few hours. I have extracted the projects I have worked on more into their own repositories.",
+    "extendedDescription": "During the #100DaysOfCode challenge I worked through the projects defined in the <a href='https://training.talkpython.fm/courses/explore_100days_web/100-days-of-web-in-python' target='_blank'>\"100 Days Of Web in Python\" course</a> by <a href='https://talkpython.fm/home' target='_blank'>TalkPython</a> and <a href='http://pybit.es' target='_blank'>PyBites</a>. The course is structured into four day segments focused on a specific technology. In the first two days you would be introduced to a new technology and follow along the course videos to learn the basics. For the following two days you were given a small project idea for the introduced  (or had to come up with one) to implement independently by yourself.<br/><br/>Over the 100 days of the course, I learned a great variety of new technologies and created 45 (more or less small) projects. Most of those projects where create in a few hours over the later two days of a given segment. Other projects I have spent a bit more time on and have extracted them into their own repositories. The <a href='/tic-tac-toe'>React Tic-Tac-Toe game</a> and <a href='/short'>Short</a> are examples of those extracted projects.",
     "image": "100days-screencast.gif",
     "imageIsMacWindowScreenshot": false,
     "github": "https://github.com/tbrlpld/100daysofweb-with-python-course",
