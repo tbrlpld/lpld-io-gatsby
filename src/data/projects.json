@@ -82,7 +82,7 @@
   {
     "name": "PlotGraph",
     "description": "Sublime Text package to plot number columns as graphs",
-    "extendedDescription": "",
+    "extendedDescription": "PlotGraph is a <a href='https://www.sublimetext.com/' target='_blank'>Sublime Text</a> plugin to plot a column of numbers as a graph, or create a quick curve comparison based on multiple number columns.<br/><br/>I created PlotGraph because I was looking for a way to be able to visualize number columns in plain text files as graphs or curve comparisons. This was a useful tool for me in my former day job, as a <a href='https://en.wikipedia.org/wiki/Crash_simulation' target='_blank'>CAE simulation</a> and development engineer for automotive safety, because simulation files often contain many time history or stress-strain curves.",
     "image": "plotgraph.png",
     "imageIsMacWindowScreenshot": false,
     "github": "https://github.com/tbrlpld/PlotGraph",
