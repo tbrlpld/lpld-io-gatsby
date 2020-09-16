@@ -62,22 +62,22 @@
   {
     "name": "Flaskr",
     "description": "Flask based blog app build as an extended version of the Flask tutorial",
-    "extendedDescription": "The extension includes the following features : detail post view, likes, comments, tags, title search, pagination, image upload, markdown formatting and RSS feed.\n\nIt is definitely not pretty, but that was not the point of the exercise.",
+    "extendedDescription": "Flaskr is the typical app that you create when going through the <a href='https://flask.palletsprojects.com/en/1.1.x/tutorial/' target='_blank'>Flask tutorial</a>. In the end of the tutorial you have a working blog application with user authentication and CRUD features for the blog posts.<br/><br/>The interesting part of the tutorial really starts on <a href='https://flask.palletsprojects.com/en/1.1.x/tutorial/next/' target='_blank'>the last page</a>, where it is suggested to continue the development by adding features like: detail post view, likes, comments, tags, title search, pagination, image upload, markdown formatting and RSS feed. I did implement each of these features and found it be a really tremendous learning experience. The experience not only thought me Flask, but Python and web development in general. The UI of the resulting blog app is definitely not pretty, but that was not the point of the exercise.",
     "image": "flaskr.png",
     "imageIsMacWindowScreenshot": true,
     "github": "https://github.com/tbrlpld/flaskr",
     "live": "",
-    "technologies": "Coverage, Flask, Jinja, Pytest, Python, Test Driven Development"
+    "technologies": "Python, Flask, Jinja, Test Driven Development, Pytest, Coverage"
   },
   {
     "name": "CAE Job Diary",
     "description": "Web application to search, track and summarize CAE simulation jobs",
-    "extendedDescription": "I developed CAE Job Dairy as a side project to help me stay organized in my former day job as a CAE simulation and development engineer for automotive safety. Simulation jobs added to the server cluster are polled and the submission information is automatically added to the web app. Changes to the jobs status are automatically update in the web app and you can leave a result summary after you analyzed your job.",
+    "extendedDescription": "I developed CAE Job Dairy as a side project to help me stay organized in my former day job as a <a href='https://en.wikipedia.org/wiki/Crash_simulation' target='_blank'>CAE simulation</a> and development engineer for automotive safety.<br/><br/>Simulation jobs added to the solver server cluster are polled and the submission information is automatically added to the web app. Changes to the jobs status are automatically update in the web app and you can leave a result summary after you analyzed your job. The web interface allows you to add summary notes and categorize the outcome of the simulation. You can also use the web app to search and filter jobs (by project and/or user).<br/><br/>CAE Job Dairy is probably the most complex app I have developed thus far (2020). Not because of the web app frontend. The frontend is extremely simple and does not even have user authentication (it was a feature idea but not necessary for the tiny user base at first). The complexities come in because of the different data files it has to parse, the events and conditions and connected race conditions on the file system it has to deal with. It was also my first larger app and I have learned a great deal about how to structure software since then. I probably would not build it like this again. Especially the coupling between the backend parsing processes and the Django web app have shown some significant down sides.",
     "image": "caejd.png",
     "imageIsMacWindowScreenshot": false,
     "github": "https://github.com/tbrlpld/caejobdiary",
     "live": "",
-    "technologies": "Bootstrap, Django, Docker, GitLab CI, MySQL, Python"
+    "technologies": "Python, Django, GitLab CI, Docker, MySQL, Bootstrap"
   },
   {
     "name": "PlotGraph",
@@ -87,7 +87,7 @@
     "imageIsMacWindowScreenshot": false,
     "github": "https://github.com/tbrlpld/PlotGraph",
     "live": "",
-    "technologies": "Matplotlib, Python, Sublime Text"
+    "technologies": "Python, Matplotlib, Sublime Text"
   },
   {
     "name": "100 Days Of Web in Python",
