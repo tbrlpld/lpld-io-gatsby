@@ -2,22 +2,22 @@
   {
     "name": "Wagtail Gatsby Blog (Frontend)",
     "description": "Frontend for a prototype Wagtail-Gatsby blog",
-    "extendedDescription": "I created this project to figure out how I can use Wagtail as a headless CMS for a static website build with Gatsby. The backend makes use of Wagtail-Grapple to create the GraphQL endpoint. The GraphQL endpoint is consumed on the frontend with the help of the gatsby-source-wagtail plugin.<br /><br />Design and content are certainly not great, as I was focused on the technical implementation.",
+    "extendedDescription": "I created this project to figure out how I can use Wagtail as a headless CMS for a static website build with Gatsby. The <a href='/wagtail-gatsby-blog-(backend)'>backend</a> makes use of Wagtail-Grapple to create the GraphQL endpoint. The GraphQL endpoint is consumed on the frontend with the help of the gatsby-source-wagtail plugin.<br /><br />Design and content are certainly not great, as I was focused on the technical implementation.",
     "image": "wagtail-gatsby-blog-frontend.png",
     "imageIsMacWindowScreenshot": true,
     "github": "https://github.com/tbrlpld/wagtail-gatsby-blog-frontend",
     "live": "",
-    "technologies": "Gatsby, Gatsby-Source-Wagtail, GraphQL, Headless-CMS, JavaScript, React, Wagtail, Wagtail-Grapple"
+    "technologies": "JavaScript, React, Gatsby, Gatsby-Source-Wagtail, Wagtail, Wagtail-Grapple, GraphQL, Headless-CMS, "
   },
   {
     "name": "Wagtail Gatsby Blog (Backend)",
     "description": "Backend for a prototype Wagtail-Gatsby blog",
-    "extendedDescription": "I created this project to figure out how I can use Wagtail as a headless CMS for a static website build with Gatsby. The backend makes use of Wagtail-Grapple to create the GraphQL endpoint. The GraphQL endpoint is consumed on the frontend with the help of the gatsby-source-wagtail plugin.<br /><br />Design and content are certainly not great, as I was focused on the technical implementation.",
+    "extendedDescription": "I created this project to figure out how I can use Wagtail as a headless CMS for a static website build with Gatsby. The backend makes use of Wagtail-Grapple to create the GraphQL endpoint. The GraphQL endpoint is consumed on the <a href='/wagtail-gatsby-blog-(frontend)'>frontend</a> with the help of the gatsby-source-wagtail plugin.<br /><br />Design and content are certainly not great, as I was focused on the technical implementation.",
     "image": "wagtail-gatsby-blog-backend.png",
     "imageIsMacWindowScreenshot": true,
     "github": "https://github.com/tbrlpld/wagtail-gatsby-blog-backend",
     "live": "",
-    "technologies": "Django, Docker, Gatsby, GraphQL, Graphene, Graphene-Django, Headless-CMS, Poetry, Python, Vagrant, Wagtail, Wagtail-Grapple"
+    "technologies": "Python, Django, Wagtail, Wagtail-Grapple, Headless-CMS, Gatsby, GraphQL, Graphene, Graphene-Django, Poetry, Docker, Vagrant"
   },
   {
     "name": "Logtweet",
