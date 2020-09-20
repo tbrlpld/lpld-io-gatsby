@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
       <SEO title='Portfolio' />
       <section className={style.welcome}>
         <div className={style.headingWrapper}>
-          <h1>Hi there,</h1>
+          <h1>Greetings,</h1>
           <Image className={style.profilePicture} fluid={data.profilePicture.fluid} alt='Profile photo' />
         </div>
         <p className={style.intro}>I am Tibor. I’m a former automotive engineer on a journey to becoming a full&nbsp;stack&nbsp;developer.</p>
