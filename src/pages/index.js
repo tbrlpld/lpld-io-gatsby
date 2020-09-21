@@ -48,7 +48,7 @@ const IndexPage = ({ data }) => {
         <p className={style.intro}>I am Tibor, a former automotive engineer on a journey to becoming a full&nbsp;stack&nbsp;developer.</p>
       </section>
       <section id='projects' className={style.projects}>
-        <h2>These are things I have build before</h2>
+        <h2>These are things I have built before</h2>
         <ul>
           {projectElements}
         </ul>
