@@ -56,7 +56,6 @@
     "image": "short.gif",
     "imageIsMacWindowScreenshot": false,
     "github": "https://github.com/tbrlpld/short",
-    "live": "https://s.lpld.io",
     "technologies": "Python, Flask, Zappa, AWS DynamoDB, AWS Lamba"
   },
   {
